@@ -4,7 +4,7 @@ angular
 
 			var url = 'data/subinpaul.json';
 			if (location.href.indexOf("subinpaul.com") > -1 ) { // Firebase URL for live site
-				url = 'https://project-2240742622913796162.firebaseio.com/portfolio.json';
+				url = '//subinpaul-v3.firebaseio.com/portfolio.json';
 		  }
 
 			getFromLocalStorage = function (subPath) {
