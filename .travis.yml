@@ -1,0 +1,11 @@
+language : node_js
+node_js :
+  - "4.0"
+script :
+  - echo "Deploying!"
+install :
+  - npm i -g firebase-tools
+  - firebase -V
+  - firebase deploy --token $FIREBASE_TOKEN
+after_sucess:
+  - echo "--End firebase--"
