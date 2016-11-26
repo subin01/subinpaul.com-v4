@@ -1,0 +1,61 @@
+<div id="content-wrap">
+
+		<div id="gallery-terms" ng-show="filter">
+			<ul>
+				<li>Quick Portfolio: <span> </span></li>
+				<li><a href="" data-value="term-16" title="View all items filed under Kids">Kids</a> <span>/</span>
+				</li>
+				<li><a href="" data-value="term-18" title="View all items filed under Landscapes">Landscapes</a> <span>/</span>
+				</li>
+				<li><a href="" data-value="term-3" title="View all items filed under Nature">Nature</a> <span>/</span>
+				</li>
+				<li><a href="" data-value="term-17" title="View all items filed under People">People</a> <span>/</span>
+				</li>
+				<li><a href="" data-value="term-20" title="View all items filed under Photoshoots">Photoshoots</a> <span>/</span>
+				</li>
+				<li><a href="" data-value="term-19" title="View all items filed under Travel">Travel</a> <span>/</span>
+				</li>
+				<li><a href="" data-value="term-9" title="View all items filed under White&amp;Black">White&amp;Black</a> <span>/</span>
+				</li>
+				<li><a href="https://web.archive.org/web/20150110112031/http://www.subinpaul.com/#" class="all current">All</a><span>/</span></li>
+			</ul>
+		</div>
+
+
+		<div id="page-title-wrap" ng-show="title">
+				<h1 class="page-title">{{title}}</h1>
+				<div ng-bind-html="message"></div>
+		</div>
+
+		<div id="gallery-wrap">
+			<ul>
+
+				<!--
+				<li ng-repeat="photo in gallery"
+				class="{{photo.tags}}"
+				id={{photo.id}}
+
+				data-fullsize="{{photo.url}}"
+				data-title="{{photo.title}}"
+				style="background-image:url({{photo.url.replace('.jpg', '-150x150.jpg')}})"
+				>
+				</li>
+			-->
+
+				"gallery" : { <br>
+			<div ng-repeat="photo in gallery">
+					"{{photo.id}}" : { <br>
+							"tags" : "{{photo.tags}}", <br>
+							"id"   : "{{photo.id}}", <br>
+							"url"	 : "{{photo.url}}", <br>
+							"title": "{{photo.title}}" <br>
+					},<br>
+			</div>
+		}
+
+
+
+			</ul>
+		</div>
+
+</div>

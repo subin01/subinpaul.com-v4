@@ -1,0 +1,75 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<base href="/">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<META name="keywords" lang="en-us" content="Photography, Digital, Kerala, India, Photos, Subin, Paul, subinpaul, flickr, Nature, Travel">
+	<META name="copyright" content="&copy; 2016 Subin Paul.">
+	<meta name='description' content="Nature and travel photography by Subin Paul." />
+	<meta property="og:title" content="Check out Subin Paul Photography" />
+	<meta property="og:description" content="Nature and travel photography by Subin Paul." />
+	<meta property="og:image" content="http://www.subinpaul.com/wp-content/uploads/2011/07/other-3-80x80.jpg" />
+	<meta property="og:type" content="Portfolio" />
+
+	<title>Welcome | Subin Paul Photography</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Merriweather&v1' type='text/css'>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="s3.png" />
+</head>
+
+<body>
+	<div id="container">
+
+		<header>
+			<div id="logo">
+				<a href="/#"><img src="assets/images/dark/logo.png" alt="Subin Paul Photography" /></a>
+			</div>
+
+
+			<div id="primary-nav">
+				<ul id="menu-default1" class="menu">
+					<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a title="Back to Homepage" href="/#">Home</a></li>
+					<li id="menu-item-415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-415"><a title="* New Photo Stories!" href="/#stories">Stories<span style='color:red'>*</span></a></li>
+					<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a title="About Me, Contact &amp; Comments" href="/#about">About</a></li>
+					<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a title="My facebook page" href="http://www.facebook.com/subinpaulphotography">Facebook</a></li>
+				</ul>
+			</div>
+
+
+		</header>
+
+		<div ui-view></div>
+	</div>
+
+	<footer>
+		&copy; Copyright 2016&nbsp;&nbsp;Subin Paul Photography. | Ver 2.0 
+
+	</footer>
+	</div>
+
+
+
+	<div id="loader">
+		<div class="loader-wrap">
+			<div class="loader-img">&nbsp;</div>
+		</div>
+	</div>
+	<div id="gallery-overlay" class="true"></div>
+
+	<!-- build:lib -->
+	<script type='text/javascript' src='assets/js/jquery.js'></script>
+	<script type="text/javascript" src="assets/js/jquery.shortcuts.js"></script>
+	<script type='text/javascript' src='assets/js/angular.min.js'></script>
+	<script type='text/javascript' src='assets/js/angular-ui-router.min.js'></script>
+	<!-- endbuild -->
+
+	<script src="app.js"></script>
+	<script src="controllers/aboutCtrl.js"></script>
+	<script src="controllers/storiesCtrl.js"></script>
+	<script src="controllers/galleryCtrl.js"></script>
+	<script src="services/Gallery.js"></script>
+
+
+</body>
+</html>
