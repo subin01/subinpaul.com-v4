@@ -2,7 +2,7 @@ angular
 	.module('app')
 	.factory('Gallery', ['$http', '$q', function ($http, $q) {
 
-			var url = 'data/subinpaulV2.json';
+			var url = 'data/subinpaulV3.json';
 			var ENV = location.href.indexOf("subinpaul.com") > -1 ? 'PROD' : 'LOCAL';
 
 			if (ENV === 'PROD') {
@@ -13,7 +13,7 @@ angular
 				var galleryData, localHandle;
 
 				if (localStorage) {
-					localHandle = localStorage.getItem('subinpaul');
+					localHandle = localStorage.getItem('subinpaulV3');
 					if (localHandle !== null) {
 						galleryData = JSON.parse(localHandle);
 					}
@@ -23,7 +23,7 @@ angular
 
 			setToLocalStorage = function (data) {
 				if (localStorage) {
-					localStorage.setItem('subinpaul', JSON.stringify(data));
+					localStorage.setItem('subinpaulV3', JSON.stringify(data));
 				}
 			};
 
