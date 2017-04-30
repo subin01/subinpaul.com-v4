@@ -6,11 +6,27 @@ angular
 		//Get returns a Promise object not data
 		Gallery.get( subPath ).then(function (response) {
 
-			$scope.title   = response.title;
-			$scope.message = $sce.trustAsHtml(response.message);
-			$scope.filter  = response.filter;
-			$scope.gallery = response.gallery;
+			var collectionObj = {};
+			filteredGallery = filterByCollection (response.gallery, subPath);
+
+			$scope.title   = response.collections[subPath].title;
+			$scope.message = $sce.trustAsHtml(response.collections[subPath].message);
+			$scope.filter  = response.collections[subPath].filter;
+			$scope.gallery = filteredGallery;
 		});
+
+
+		filterByCollection = function (gallery, collectionKey) {
+			var filteredGallery = {};
+			for (var key in gallery){
+				if(gallery[key].collection === collectionKey) {
+					filteredGallery[key] = gallery[key];
+			  }
+			}
+			return filteredGallery;
+
+		};
+
 
 		$scope.$on('$viewContentLoaded', function (event) {
 			$timeout(function () {

@@ -2,18 +2,20 @@ angular
 	.module('app')
 	.factory('Gallery', ['$http', '$q', function ($http, $q) {
 
-			var url = 'data/subinpaul.json';
-			if (location.href.indexOf("subinpaul.com") > -1 ) { // Firebase URL for live site
-				url = 'https://subinpaul-v3.firebaseio.com/portfolio.json';
+			var url = 'data/subinpaulV2.json';
+			var ENV = location.href.indexOf("subinpaul.com") > -1 ? 'PROD' : 'LOCAL';
+
+			if (ENV === 'PROD') {
+				url = 'https://subinpaul-v3.firebaseio.com/portfolio.json'; // Firebase URL for live site
 		  }
 
-			getFromLocalStorage = function (subPath) {
+			getFromLocalStorage = function () {
 				var galleryData, localHandle;
 
 				if (localStorage) {
 					localHandle = localStorage.getItem('subinpaul');
 					if (localHandle !== null) {
-						galleryData = JSON.parse(localHandle)[subPath];
+						galleryData = JSON.parse(localHandle);
 					}
 				}
 				return galleryData;
@@ -30,8 +32,7 @@ angular
 
 				get: function (subPath) {
 
-					var dataPromise, localData = getFromLocalStorage(subPath);
-
+					var dataPromise, localData = getFromLocalStorage();
 					/* Check Data in Local storage */
 					if (typeof localData != "undefined") {
 
@@ -40,8 +41,7 @@ angular
 					} else { /* Fetch from server otherwise  */
 						dataPromise = $http.get(url).then(function (response) {
 							setToLocalStorage(response.data);
-							response = response.data[subPath];
-							return response;
+							return response.data;
 						});
 					}
 
