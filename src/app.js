@@ -1,3 +1,7 @@
+// var angular = require('angular');
+// var uirouter = require('angular-ui-router');
+//
+// module.exports = angular;
 
 angular
 	.module ('app', [
@@ -35,3 +39,9 @@ angular
 			})
 
 	}]) //config
+
+
+// require('./controllers/aboutCtrl');
+// require('./controllers/galleryCtrl');
+// require('./controllers/storiesCtrl');
+// require('./services/Gallery');
