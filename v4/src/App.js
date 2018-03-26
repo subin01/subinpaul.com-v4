@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
-import './App.css';
-
-import Header from './components/Header';
-import Gallery from './components/Gallery';
-import Footer from './components/Footer';
+import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
+import CollectionsPage from "./pages/CollectionsPage";
+import AllPhotosPage from "./pages/AllPhotosPage";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-
-        <Header/>
-        <Gallery/>
-        <Footer/>
-
-      </div>
+      <Switch>
+        <Route exact path="/" component={CollectionsPage} />
+        <Route exact path="/all" component={AllPhotosPage} />
+      </Switch>
     );
   }
 }
