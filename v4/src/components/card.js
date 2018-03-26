@@ -1,25 +1,18 @@
 import React, { Component } from "react";
 
 class Card extends Component {
-
   render() {
-    const { key, title, tags, url } = this.props;
+    const { id, title, tags, url, handleClick } = this.props;
     return (
-      <div className="card" id={key}>
-        <div className="content">
-
-          <div className="bg">
-            <img src={url} alt='' />
-          </div>
-          <div>
-            {title}
-          </div>
-
-          <div className="tags">
-            {tags}
-          </div>
-        </div>
-      </div>
+      <article id={id}>
+        <a href="#" onClick={() => handleClick(id)}>
+          <figure>
+            <img src={url} alt="" />
+            <figcaption>{title}</figcaption>
+            <div className="tags">{tags}</div>
+          </figure>
+        </a>
+      </article>
     );
   }
 }

@@ -1,787 +1,809 @@
 {
-  "portfolio" : {
-    "collectionOptions" : {
-      "dilli" : {
-        "filter" : false,
-        "message" : "<p><br/><br/>The Capital was christened &#8220;New Delhi&#8221; in 1927.<br />  It is one of the fastest growing cities in the world.<br />The National Geographic&#8217;s Traveler Magazine describes it as &#8220;one of the Ultimate Cities of a Lifetime to visit and explore.&#8221;<br/><br/>Here&#8217;s few images I captured during my Delhi visit back in 2009.</p>",
-        "name" : "Dilli",
-        "title" : "Dilli - The capital city"
+  "portfolio": {
+    "collectionOptions": {
+      "dilli": {
+        "filter": false,
+        "message":
+          "<p><br/><br/>The Capital was christened &#8220;New Delhi&#8221; in 1927.<br />  It is one of the fastest growing cities in the world.<br />The National Geographic&#8217;s Traveler Magazine describes it as &#8220;one of the Ultimate Cities of a Lifetime to visit and explore.&#8221;<br/><br/>Here&#8217;s few images I captured during my Delhi visit back in 2009.</p>",
+        "name": "Dilli",
+        "title": "Dilli - The capital city"
       },
-      "home" : {
-        "filter" : true,
-        "message" : "",
-        "name" : "Home",
-        "title" : ""
+      "home": {
+        "filter": true,
+        "message": "",
+        "name": "Home",
+        "title": ""
       },
-      "rajasthan" : {
-        "filter" : false,
-        "message" : "<p>Famous for its majestic forts,intricately carved temples,and decorated havelis,built by Rajput kings;<br />  Rajasthan is also the land of colours.<br/><br/>Here&#8217;s few frames from my travel through the cities of Rajasthan -<br />Jaipur known as the Pink City,<br />Jodhpur known the Blue City and<br />Jaisalmer nicknamed The Golden City &#8211; in 2009 &amp; 2010.</p>",
-        "name" : "Rajastan",
-        "title" : "Rajasthan - The land of kings"
+      "rajasthan": {
+        "filter": false,
+        "message":
+          "<p>Famous for its majestic forts,intricately carved temples,and decorated havelis,built by Rajput kings;<br />  Rajasthan is also the land of colours.<br/><br/>Here&#8217;s few frames from my travel through the cities of Rajasthan -<br />Jaipur known as the Pink City,<br />Jodhpur known the Blue City and<br />Jaisalmer nicknamed The Golden City &#8211; in 2009 &amp; 2010.</p>",
+        "name": "Rajastan",
+        "title": "Rajasthan - The land of kings"
       }
     },
-    "gallery" : {
-      "photo-100" : {
-        "collections" : [ "home" ],
-        "id" : "photo-100",
-        "tags" : [  "term-3" ],
-        "title" : "travel (6)",
-        "url" : "../wp-content/uploads/travel-6.jpg"
-      },
-      "photo-101" : {
-        "collections" : [ "home" ],
-        "id" : "photo-101",
-        "tags" : [ "term-10", "term-17", "term-19" ],
-        "title" : "travel (5)",
-        "url" : "../wp-content/uploads/travel-5.jpg"
-      },
-      "photo-102" : {
-        "collections" : [ "home" ],
-        "id" : "photo-102",
-        "tags" : [ "term-19" ],
-        "title" : "travel (4)",
-        "url" : "../wp-content/uploads/travel-4.jpg"
-      },
-      "photo-103" : {
-        "collections" : [ "home" ],
-        "id" : "photo-103",
-        "tags" : [ "term-19" ],
-        "title" : "travel (3)",
-        "url" : "../wp-content/uploads/travel-3.jpg"
-      },
-      "photo-105" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-105",
-        "tags" : [ "" ],
-        "title" : "travel (2)",
-        "url" : "../wp-content/uploads/travel-2.jpg"
-      },
-      "photo-122" : {
-        "collections" : [ "home" ],
-        "id" : "photo-122",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "landscapes (11)",
-        "url" : "../wp-content/uploads/landscapes-11.jpg"
-      },
-      "photo-123" : {
-        "collections" : [ "home" ],
-        "id" : "photo-123",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "landscapes (10)",
-        "url" : "../wp-content/uploads/landscapes-10.jpg"
-      },
-      "photo-124" : {
-        "collections" : [ "home" ],
-        "id" : "photo-124",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "landscapes (9)",
-        "url" : "../wp-content/uploads/landscapes-9.jpg"
-      },
-      "photo-125" : {
-        "collections" : [ "home" ],
-        "id" : "photo-125",
-        "tags" : [ "term-18", "term-3", "term-19" ],
-        "title" : "landscapes (8)",
-        "url" : "../wp-content/uploads/landscapes-8.jpg"
-      },
-      "photo-127" : {
-        "collections" : [ "home" ],
-        "id" : "photo-127",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "landscapes (2)",
-        "url" : "../wp-content/uploads/landscapes-2.jpg"
-      },
-      "photo-153" : {
-        "collections" : [ "home" ],
-        "id" : "photo-153",
-        "tags" : [ "term-16", "term-17", "term-11", "term-9" ],
-        "title" : "other (2)",
-        "url" : "../wp-content/uploads/other-2.jpg"
-      },
-      "photo-174" : {
-        "collections" : [ "home" ],
-        "id" : "photo-174",
-        "tags" : [ "term-10", "term-17", "term-11" ],
-        "title" : "4438763264_0a96e68ab3_z",
-        "url" : "../wp-content/uploads/4438763264_0a96e68ab3_z.jpg"
-      },
-      "photo-180" : {
-        "collections" : [ "home" ],
-        "id" : "photo-180",
-        "tags" : [ "term-17" ],
-        "title" : "fotoshoot (10)",
-        "url" : "../wp-content/uploads/photoshoot-10.jpg"
-      },
-      "photo-181" : {
-        "collections" : [ "home" ],
-        "id" : "photo-181",
-        "tags" : [ "term-17", "term-20", "term-19" ],
-        "title" : "fotoshoot (7)",
-        "url" : "../wp-content/uploads/photoshoot-7.jpg"
-      },
-      "photo-182" : {
-        "collections" : [ "home" ],
-        "id" : "photo-182",
-        "tags" : [ "term-19" ],
-        "title" : "fotoshoot (6)",
-        "url" : "../wp-content/uploads/photoshoot-6.jpg"
-      },
-      "photo-183" : {
-        "collections" : [ "home" ],
-        "id" : "photo-183",
-        "tags" : [ "term-17", "term-20" ],
-        "title" : "fotoshoot (3)",
-        "url" : "../wp-content/uploads/photoshoot-3.jpg"
-      },
-      "photo-184" : {
-        "collections" : [ "home" ],
-        "id" : "photo-184",
-        "tags" : [ "term-17", "term-20" ],
-        "title" : "fotoshoot (2)",
-        "url" : "../wp-content/uploads/photoshoot-2.jpg"
-      },
-      "photo-185" : {
-        "collections" : [ "home" ],
-        "id" : "photo-185",
-        "tags" : [ "term-17", "term-20" ],
-        "title" : "fotoshoot (1)",
-        "url" : "../wp-content/uploads/photoshoot-1.jpg"
-      },
-      "photo-186" : {
-        "collections" : [ "home" ],
-        "id" : "photo-186",
-        "tags" : [ "term-17", "term-19" ],
-        "title" : "other (7)",
-        "url" : "../wp-content/uploads/other-7.jpg"
-      },
-      "photo-187" : {
-        "collections" : [ "home" ],
-        "id" : "photo-187",
-        "tags" : [ "term-16", "term-17" ],
-        "title" : "other (6)",
-        "url" : "../wp-content/uploads/other-6.jpg"
-      },
-      "photo-188" : {
-        "collections" : [ "home" ],
-        "id" : "photo-188",
-        "tags" : [ "term-3" ],
-        "title" : "other (5)",
-        "url" : "../wp-content/uploads/other-5.jpg"
-      },
-      "photo-189" : {
-        "collections" : [ "home" ],
-        "id" : "photo-189",
-        "tags" : [ "" ],
-        "title" : "other (3)",
-        "url" : "../wp-content/uploads/other-3.jpg"
-      },
-      "photo-190" : {
-        "collections" : [ "home" ],
-        "id" : "photo-190",
-        "tags" : [ "term-17" ],
-        "title" : "other (1)",
-        "url" : "../wp-content/uploads/other-1.jpg"
-      },
-      "photo-191" : {
-        "collections" : [ "home" ],
-        "id" : "photo-191",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "landscapes (15)",
-        "url" : "../wp-content/uploads/landscapes-15.jpg"
-      },
-      "photo-192" : {
-        "collections" : [ "home" ],
-        "id" : "photo-192",
-        "tags" : [ "term-18", "term-3", "term-19" ],
-        "title" : "landscapes (12)",
-        "url" : "../wp-content/uploads/landscapes-12.jpg"
-      },
-      "photo-193" : {
-        "collections" : [ "home" ],
-        "id" : "photo-193",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "landscapes (13)",
-        "url" : "../wp-content/uploads/landscapes-13.jpg"
-      },
-      "photo-194" : {
-        "collections" : [ "home" ],
-        "id" : "photo-194",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "landscapes (14)",
-        "url" : "../wp-content/uploads/landscapes-14.jpg"
-      },
-      "photo-196" : {
-        "collections" : [ "home" ],
-        "id" : "photo-196",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "landscapes (16)",
-        "url" : "../wp-content/uploads/landscapes-16.jpg"
-      },
-      "photo-198" : {
-        "collections" : [ "home" ],
-        "id" : "photo-198",
-        "tags" : [ "term-18", "term-19" ],
-        "title" : "IMG_7165",
-        "url" : "../wp-content/uploads/IMG_7165.jpg"
-      },
-      "photo-200" : {
-        "collections" : [ "home" ],
-        "id" : "photo-200",
-        "tags" : [ "term-13", "term-17", "term-11" ],
-        "title" : "PORTRAIT_SubinPaul_cybershots_2",
-        "url" : "../wp-content/uploads/PORTRAIT_SubinPaul_cybershots_2.jpg"
-      },
-      "photo-205" : {
-        "collections" : [ "home" ],
-        "id" : "photo-205",
-        "tags" : [ "term-16", "term-17" ],
-        "title" : "IMG_8377 - done",
-        "url" : "../wp-content/uploads/IMG_8377-done.jpg"
-      },
-      "photo-206" : {
-        "collections" : [ "home" ],
-        "id" : "photo-206",
-        "tags" : [ "term-16", "term-17" ],
-        "title" : "IMG_7858",
-        "url" : "../wp-content/uploads/IMG_7858.jpg"
-      },
-      "photo-207" : {
-        "collections" : [ "home" ],
-        "id" : "photo-207",
-        "tags" : [ "term-3" ],
-        "title" : "IMG_7535a",
-        "url" : "../wp-content/uploads/IMG_7535a.jpg"
-      },
-      "photo-208" : {
-        "collections" : [ "home" ],
-        "id" : "photo-208",
-        "tags" : [ "term-16", "term-17" ],
-        "title" : "3855943287_3d355180ed_z",
-        "url" : "../wp-content/uploads/3855943287_3d355180ed_z.jpg"
-      },
-      "photo-211" : {
-        "collections" : [ "home" ],
-        "id" : "photo-211",
-        "tags" : [ "term-3", "term-17", "term-9" ],
-        "title" : "2107750711_f007cd9d29_b",
-        "url" : "../wp-content/uploads/2107750711_f007cd9d29_b.jpg"
-      },
-      "photo-27" : {
-        "collections" : [ "home" ],
-        "id" : "photo-27",
-        "tags" : [ "term-3" ],
-        "title" : "Green Team",
-        "url" : "../wp-content/uploads/IMG_2688-copy.jpg"
-      },
-      "photo-281" : {
-        "collections" : [ "home" ],
-        "id" : "photo-281",
-        "tags" : [ "term-16" ],
-        "title" : "2 cricket time",
-        "url" : "../wp-content/uploads/2-cricket-time.jpg"
-      },
-      "photo-288" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-288",
-        "tags" : [ "" ],
-        "title" : "9 my pet",
-        "url" : "../wp-content/uploads/9-my-pet.jpg"
-      },
-      "photo-290" : {
-        "collections" : [ "home" ],
-        "id" : "photo-290",
-        "tags" : [ "term-17", "term-9" ],
-        "title" : "11 paatti",
-        "url" : "../wp-content/uploads/11-paatti.jpg"
-      },
-      "photo-293" : {
-        "collections" : [ "home" ],
-        "id" : "photo-293",
-        "tags" : [ "term-20", "term-9" ],
-        "title" : "14 self",
-        "url" : "../wp-content/uploads/14-self.jpg"
-      },
-      "photo-296" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-296",
-        "tags" : [ "" ],
-        "title" : "17 streetlife",
-        "url" : "../wp-content/uploads/17-streetlife.jpg"
-      },
-      "photo-298" : {
-        "collections" : [ "home" ],
-        "id" : "photo-298",
-        "tags" : [ "term-19" ],
-        "title" : "19 thanjavur-entrance",
-        "url" : "../wp-content/uploads/19-thanjavur-entrance.jpg"
-      },
-      "photo-299" : {
-        "collections" : [ "home" ],
-        "id" : "photo-299",
-        "tags" : [ "term-17", "term-9" ],
-        "title" : "20 the look",
-        "url" : "../wp-content/uploads/20-the-look.jpg"
-      },
-      "photo-313" : {
-        "collections" : [ "home" ],
-        "id" : "photo-313",
-        "tags" : [ "term-16", "term-20" ],
-        "title" : "21 photoshoot",
-        "url" : "../wp-content/uploads/21-photoshoot.jpg"
-      },
-      "photo-315" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-315",
-        "tags" : [ "" ],
-        "title" : "IMG_2332-small",
-        "url" : "../wp-content/uploads/IMG_2332-small.jpg"
-      },
-      "photo-317" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-317",
-        "tags" : [ "" ],
-        "title" : "25 qutub-minar-details",
-        "url" : "../wp-content/uploads/25-qutub-minar-details.jpg"
-      },
-      "photo-322" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-322",
-        "tags" : [ "" ],
-        "title" : "24 qutub-minar-eve",
-        "url" : "../wp-content/uploads/24-qutub-minar-eve.jpg"
-      },
-      "photo-323" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-323",
-        "tags" : [ "" ],
-        "title" : "23 lost-in-thoughts",
-        "url" : "../wp-content/uploads/23-lost-in-thoughts.jpg"
-      },
-      "photo-324" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-324",
-        "tags" : [ "" ],
-        "title" : "22 taj-details",
-        "url" : "../wp-content/uploads/22-taj-details.jpg"
-      },
-      "photo-326" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-326",
-        "tags" : [ "" ],
-        "title" : "28 taj night",
-        "url" : "../wp-content/uploads/28-taj-night.jpg"
-      },
-      "photo-340" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-340",
-        "tags" : [ "" ],
-        "title" : "32 reflection",
-        "url" : "../wp-content/uploads/32-reflection.jpg"
-      },
-      "photo-341" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-341",
-        "tags" : [ "" ],
-        "title" : "29 taj",
-        "url" : "../wp-content/uploads/29-taj.jpg"
-      },
-      "photo-342" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-342",
-        "tags" : [ "" ],
-        "title" : "31 reader",
-        "url" : "../wp-content/uploads/31-reader.jpg"
-      },
-      "photo-343" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-343",
-        "tags" : [ "" ],
-        "title" : "30 fakir",
-        "url" : "../wp-content/uploads/30-fakir.jpg"
-      },
-      "photo-36" : {
-        "collections" : [ "home" ],
-        "id" : "photo-36",
-        "tags" : [ "term-3" ],
-        "title" : "IMG_5750_1",
-        "url" : "../wp-content/uploads/IMG_5750_1.jpg"
-      },
-      "photo-367" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-367",
-        "tags" : [ "" ],
-        "title" : "IMG_2427",
-        "url" : "../wp-content/uploads/IMG_2427.jpg"
-      },
-      "photo-370" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-370",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan-IMG_3831-small",
-        "url" : "../wp-content/uploads/rajasthan-IMG_3831-small.jpg"
-      },
-      "photo-382" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-382",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan-IMG_3634-small",
-        "url" : "../wp-content/uploads/rajasthan-IMG_3634-small.jpg"
-      },
-      "photo-383" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-383",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan-hawa mahal - IMG_3799-small",
-        "url" : "../wp-content/uploads/rajasthan-hawa-mahal-IMG_3799-small.jpg"
-      },
-      "photo-384" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-384",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan street muisician IMG_3762-small",
-        "url" : "../wp-content/uploads/rajasthan-street-muisician-IMG_3762-small.jpg"
-      },
-      "photo-385" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-385",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan snake charmer IMG_3788-small",
-        "url" : "../wp-content/uploads/rajasthan-snake-charmer-IMG_3788-small.jpg"
-      },
-      "photo-386" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-386",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan IMG_3816-small",
-        "url" : "../wp-content/uploads/rajasthan-IMG_3816-small.jpg"
-      },
-      "photo-387" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-387",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan IMG_3741-small",
-        "url" : "../wp-content/uploads/rajasthan-IMG_3741-small.jpg"
-      },
-      "photo-388" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-388",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan camel IMG_3729-small",
-        "url" : "../wp-content/uploads/rajasthan-camel-IMG_3729-small.jpg"
-      },
-      "photo-389" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-389",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan IMG_3510-small",
-        "url" : "../wp-content/uploads/rajasthan-IMG_3510-small.jpg"
-      },
-      "photo-390" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-390",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan IMG_3478",
-        "url" : "../wp-content/uploads/rajasthan-IMG_3478.jpg"
-      },
-      "photo-391" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-391",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "rajasthan girl IMG_3481-small",
-        "url" : "../wp-content/uploads/rajasthan-girl-IMG_3481-small.jpg"
-      },
-      "photo-417" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-417",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "IMG_4757-small",
-        "url" : "../wp-content/uploads/IMG_4757-small.jpg"
-      },
-      "photo-42" : {
-        "collections" : [ "home" ],
-        "id" : "photo-42",
-        "tags" : [ "term-3" ],
-        "title" : "nature (3)",
-        "url" : "../wp-content/uploads/nature-3.jpg"
-      },
-      "photo-424" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-424",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "IMG_5132a-small",
-        "url" : "../wp-content/uploads/IMG_5132a-small.jpg"
-      },
-      "photo-425" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-425",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "IMG_4365-small",
-        "url" : "../wp-content/uploads/IMG_4365-small.jpg"
-      },
-      "photo-426" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-426",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "IMG_4395-small",
-        "url" : "../wp-content/uploads/IMG_4395-small.jpg"
-      },
-      "photo-427" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-427",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "IMG_4378-small",
-        "url" : "../wp-content/uploads/IMG_4378-small.jpg"
-      },
-      "photo-428" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-428",
-        "tags" : [ "term-21", "term-14" ],
-        "title" : "IMG_4852a-small",
-        "url" : "../wp-content/uploads/IMG_4852a-small.jpg"
-      },
-      "photo-43" : {
-        "collections" : [ "home" ],
-        "id" : "photo-43",
-        "tags" : [ "term-3" ],
-        "title" : "nature (2)",
-        "url" : "../wp-content/uploads/nature-2.jpg"
-      },
-      "photo-45" : {
-        "collections" : [ "home" ],
-        "id" : "photo-45",
-        "tags" : [ "term-3" ],
-        "title" : "nature (0)",
-        "url" : "../wp-content/uploads/nature-0.jpg"
-      },
-      "photo-454" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-454",
-        "tags" : [ "term-16", "term-21", "term-14", "term-19" ],
-        "title" : "IMG_8457-small",
-        "url" : "../wp-content/uploads/IMG_8457-small.jpg"
-      },
-      "photo-46" : {
-        "collections" : [ "home" ],
-        "id" : "photo-46",
-        "tags" : [ "term-3" ],
-        "title" : "IMG_5277 copy",
-        "url" : "../wp-content/uploads/IMG_5277-copy.jpg"
-      },
-      "photo-47" : {
-        "collections" : [ "home", "dilli" ],
-        "tags" : [ "term-3", "term-1" ],
-        "title" : "unnamed",
-        "url" : "../img/blog-bg.jpg"
-      },
-      "photo-48" : {
-        "collections" : [ "home" ],
-        "id" : "photo-48",
-        "tags" : [ "term-3" ],
-        "title" : "IMG_5170",
-        "url" : "../wp-content/uploads/IMG_5170.jpg"
-      },
-      "photo-49" : {
-        "collections" : [ "home" ],
-        "id" : "photo-49",
-        "tags" : [ "term-3", "term-9" ],
-        "title" : "IMG_4207",
-        "url" : "../wp-content/uploads/IMG_4207.jpg"
-      },
-      "photo-50" : {
-        "collections" : [ "home" ],
-        "id" : "photo-50",
-        "tags" : [ "term-3" ],
-        "title" : "IMG_3468-mail",
-        "url" : "../wp-content/uploads/IMG_3468-mail.jpg"
-      },
-      "photo-51" : {
-        "collections" : [ "home" ],
-        "id" : "photo-51",
-        "tags" : [ "term-10", "term-3" ],
-        "title" : "IMG_2983f",
-        "url" : "../wp-content/uploads/IMG_2983f.jpg"
-      },
-      "photo-52" : {
-        "collections" : [ "home" ],
-        "id" : "photo-52",
-        "tags" : [ "term-3" ],
-        "title" : "IMG_0928",
-        "url" : "../wp-content/uploads/IMG_0928.jpg"
-      },
-      "photo-53" : {
-        "collections" : [ "home" ],
-        "id" : "photo-53",
-        "tags" : [ "term-10", "term-3" ],
-        "title" : "_MG_1150",
-        "url" : "../wp-content/uploads/MG_1150.jpg"
-      },
-      "photo-69" : {
-        "collections" : [ "home" ],
-        "id" : "photo-69",
-        "tags" : [ "term-10", "term-16", "term-17", "term-11" ],
-        "title" : "people (24)",
-        "url" : "../wp-content/uploads/people-24.jpg"
-      },
-      "photo-70" : {
-        "collections" : [ "home" ],
-        "id" : "photo-70",
-        "tags" : [ "term-16", "term-17", "term-19" ],
-        "title" : "people (23)",
-        "url" : "../wp-content/uploads/people-23.jpg"
-      },
-      "photo-71" : {
-        "collections" : [ "home" ],
-        "id" : "photo-71",
-        "tags" : [ "term-13", "term-16", "term-17" ],
-        "title" : "people (22)",
-        "url" : "../wp-content/uploads/people-22.jpg"
-      },
-      "photo-72" : {
-        "collections" : [ "home" ],
-        "id" : "photo-72",
-        "tags" : [ "term-16", "term-17" ],
-        "title" : "people (21)",
-        "url" : "../wp-content/uploads/people-21.jpg"
-      },
-      "photo-73" : {
-        "collections" : [ "home" ],
-        "id" : "photo-73",
-        "tags" : [ "term-10", "term-17", "term-21" ],
-        "title" : "people (20)",
-        "url" : "../wp-content/uploads/people-20.jpg"
-      },
-      "photo-73a" : {
-        "collections" : [ "rajasthan" ],
-        "id" : "photo-73a",
-        "tags" : [ "term-10", "term-17", "term-21" ],
-        "title" : "people (20)",
-        "url" : "../wp-content/uploads/people-20.jpg"
-      },
-      "photo-74" : {
-        "collections" : [ "home" ],
-        "id" : "photo-74",
-        "tags" : [ "term-17", "term-19" ],
-        "title" : "people (19)",
-        "url" : "../wp-content/uploads/people-19.jpg"
-      },
-      "photo-75" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-75",
-        "tags" : [ "" ],
-        "title" : "people (18)",
-        "url" : "../wp-content/uploads/people-18.jpg"
-      },
-      "photo-76" : {
-        "collections" : [ "home" ],
-        "id" : "photo-76",
-        "tags" : [ "term-10", "term-17", "term-19" ],
-        "title" : "people (17)",
-        "url" : "../wp-content/uploads/people-17.jpg"
-      },
-      "photo-77" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-77",
-        "tags" : [ "" ],
-        "title" : "people (16)",
-        "url" : "../wp-content/uploads/people-16.jpg"
-      },
-      "photo-78" : {
-        "collections" : [ "home" ],
-        "id" : "photo-78",
-        "tags" : [ "term-10", "term-17" ],
-        "title" : "people (15)",
-        "url" : "../wp-content/uploads/people-15.jpg"
-      },
-      "photo-79" : {
-        "collections" : [ "home" ],
-        "id" : "photo-79",
-        "tags" : [ "term-17" ],
-        "title" : "people (12)",
-        "url" : "../wp-content/uploads/people-12.jpg"
-      },
-      "photo-8" : {
-        "collections" : [ "home" ],
-        "id" : "photo-8",
-        "tags" : [ "term-3" ],
-        "title" : "IMG_7574a",
-        "url" : "../wp-content/uploads/IMG_7574a.jpg"
-      },
-      "photo-80" : {
-        "collections" : [ "home" ],
-        "id" : "photo-80",
-        "tags" : [ "term-10", "term-17", "term-19" ],
-        "title" : "people (10)",
-        "url" : "../wp-content/uploads/people-10.jpg"
-      },
-      "photo-82" : {
-        "collections" : [ "home" ],
-        "id" : "photo-82",
-        "tags" : [ "term-10", "term-16", "term-17", "term-11", "term-9" ],
-        "title" : "people (9)",
-        "url" : "../wp-content/uploads/people-9.jpg"
-      },
-      "photo-83" : {
-        "collections" : [ "home" ],
-        "id" : "photo-83",
-        "tags" : [ "term-10", "term-16", "term-17" ],
-        "title" : "people (3)",
-        "url" : "../wp-content/uploads/people-3.jpg"
-      },
-      "photo-84" : {
-        "collections" : [ "home" ],
-        "id" : "photo-84",
-        "tags" : [ "term-16", "term-9" ],
-        "title" : "people (1)",
-        "url" : "../wp-content/uploads/people-1.jpg"
-      },
-      "photo-86" : {
-        "collections" : [ "home" ],
-        "id" : "photo-86",
-        "tags" : [ "term-10", "term-3", "term-19" ],
-        "title" : "travel (1)",
-        "url" : "../wp-content/uploads/travel-1.jpg"
-      },
-      "photo-97" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-97",
-        "tags" : [ "" ],
-        "title" : "travel (10)",
-        "url" : "../wp-content/uploads/travel-10.jpg"
-      },
-      "photo-98" : {
-        "collections" : [ "home" ],
-        "id" : "photo-98",
-        "tags" : [ "term-12", "term-15", "term-10", "term-19" ],
-        "title" : "travel (11)",
-        "url" : "../wp-content/uploads/travel-11.jpg"
-      },
-      "photo-98a" : {
-        "collections" : [ "dilli" ],
-        "id" : "photo-98a",
-        "tags" : [ "" ],
-        "title" : "travel (11)",
-        "url" : "../wp-content/uploads/travel-11.jpg"
-      },
-      "photo-99" : {
-        "collections" : [ "home" ],
-        "id" : "photo-99",
-        "tags" : [ "term-18", "term-3" ],
-        "title" : "travel (13)",
-        "url" : "../wp-content/uploads/travel-13.jpg"
-      },
-      "photo-v-269" : {
-        "collections" : ["home"],
-        "tags" : ["term-3,term-1,term-2"],
-        "title" : "Truimph custom",
-        "url" : "https://firebasestorage.googleapis.com/v0/b/gallery-cbc9c.appspot.com/o/gallery%2Fcustom-triumph-bonneville-bobber.jpg?alt=media&token=a8233676-6d66-4506-b8fc-8d7748952135"
-      },
-      "photo-v-561" : {
-        "collections" : [ "home", "dilli" ],
-        "tags" : [ "term-3", "term-1" ],
-        "title" : "unnamed2",
-        "url" : "https://firebasestorage.googleapis.com/v0/b/gallery-cbc9c.appspot.com/o/gallery%2FAaa.jpg?alt=media&token=1a1ea9e2-5684-4b61-9c5b-377722e6cd55"
+    "gallery": {
+      "photo-100": {
+        "collections": ["home"],
+        "id": "photo-100",
+        "tags": ["term-3"],
+        "title": "travel (6)",
+        "url": "../wp-content/uploads/travel-6.jpg"
+      },
+      "photo-101": {
+        "collections": ["home"],
+        "id": "photo-101",
+        "tags": ["term-10", "term-17", "term-19"],
+        "title": "travel (5)",
+        "url": "../wp-content/uploads/travel-5.jpg"
+      },
+      "photo-102": {
+        "collections": ["home"],
+        "id": "photo-102",
+        "tags": ["term-19"],
+        "title": "travel (4)",
+        "url": "../wp-content/uploads/travel-4.jpg"
+      },
+      "photo-103": {
+        "collections": ["home"],
+        "id": "photo-103",
+        "tags": ["term-19"],
+        "title": "travel (3)",
+        "url": "../wp-content/uploads/travel-3.jpg"
+      },
+      "photo-105": {
+        "collections": ["dilli"],
+        "id": "photo-105",
+        "tags": [""],
+        "title": "travel (2)",
+        "url": "../wp-content/uploads/travel-2.jpg"
+      },
+      "photo-122": {
+        "collections": ["home"],
+        "id": "photo-122",
+        "tags": ["term-18", "term-3"],
+        "title": "landscapes (11)",
+        "url": "../wp-content/uploads/landscapes-11.jpg"
+      },
+      "photo-123": {
+        "collections": ["home"],
+        "id": "photo-123",
+        "tags": ["term-18", "term-3"],
+        "title": "landscapes (10)",
+        "url": "../wp-content/uploads/landscapes-10.jpg"
+      },
+      "photo-124": {
+        "collections": ["home"],
+        "id": "photo-124",
+        "tags": ["term-18", "term-3"],
+        "title": "landscapes (9)",
+        "url": "../wp-content/uploads/landscapes-9.jpg"
+      },
+      "photo-125": {
+        "collections": ["home"],
+        "id": "photo-125",
+        "tags": ["term-18", "term-3", "term-19"],
+        "title": "landscapes (8)",
+        "url": "../wp-content/uploads/landscapes-8.jpg"
+      },
+      "photo-127": {
+        "collections": ["home"],
+        "id": "photo-127",
+        "tags": ["term-18", "term-3"],
+        "title": "landscapes (2)",
+        "url": "../wp-content/uploads/landscapes-2.jpg"
+      },
+      "photo-153": {
+        "collections": ["home"],
+        "id": "photo-153",
+        "tags": ["term-16", "term-17", "term-11", "term-9"],
+        "title": "other (2)",
+        "url": "../wp-content/uploads/other-2.jpg"
+      },
+      "photo-174": {
+        "collections": ["home"],
+        "id": "photo-174",
+        "tags": ["term-10", "term-17", "term-11"],
+        "title": "4438763264_0a96e68ab3_z",
+        "url": "../wp-content/uploads/4438763264_0a96e68ab3_z.jpg"
+      },
+      "photo-180": {
+        "collections": ["home"],
+        "id": "photo-180",
+        "tags": ["term-17"],
+        "title": "fotoshoot (10)",
+        "url": "../wp-content/uploads/photoshoot-10.jpg"
+      },
+      "photo-181": {
+        "collections": ["home"],
+        "id": "photo-181",
+        "tags": ["term-17", "term-20", "term-19"],
+        "title": "fotoshoot (7)",
+        "url": "../wp-content/uploads/photoshoot-7.jpg"
+      },
+      "photo-182": {
+        "collections": ["home"],
+        "id": "photo-182",
+        "tags": ["term-19"],
+        "title": "fotoshoot (6)",
+        "url": "../wp-content/uploads/photoshoot-6.jpg"
+      },
+      "photo-183": {
+        "collections": ["home"],
+        "id": "photo-183",
+        "tags": ["term-17", "term-20"],
+        "title": "fotoshoot (3)",
+        "url": "../wp-content/uploads/photoshoot-3.jpg"
+      },
+      "photo-184": {
+        "collections": ["home"],
+        "id": "photo-184",
+        "tags": ["term-17", "term-20"],
+        "title": "fotoshoot (2)",
+        "url": "../wp-content/uploads/photoshoot-2.jpg"
+      },
+      "photo-185": {
+        "collections": ["home"],
+        "id": "photo-185",
+        "tags": ["term-17", "term-20"],
+        "title": "fotoshoot (1)",
+        "url": "../wp-content/uploads/photoshoot-1.jpg"
+      },
+      "photo-186": {
+        "collections": ["home"],
+        "id": "photo-186",
+        "tags": ["term-17", "term-19"],
+        "title": "other (7)",
+        "url": "../wp-content/uploads/other-7.jpg"
+      },
+      "photo-187": {
+        "collections": ["home"],
+        "id": "photo-187",
+        "tags": ["term-16", "term-17"],
+        "title": "other (6)",
+        "url": "../wp-content/uploads/other-6.jpg"
+      },
+      "photo-188": {
+        "collections": ["home"],
+        "id": "photo-188",
+        "tags": ["term-3"],
+        "title": "other (5)",
+        "url": "../wp-content/uploads/other-5.jpg"
+      },
+      "photo-189": {
+        "collections": ["home"],
+        "id": "photo-189",
+        "tags": [""],
+        "title": "other (3)",
+        "url": "../wp-content/uploads/other-3.jpg"
+      },
+      "photo-190": {
+        "collections": ["home"],
+        "id": "photo-190",
+        "tags": ["term-17"],
+        "title": "other (1)",
+        "url": "../wp-content/uploads/other-1.jpg"
+      },
+      "photo-191": {
+        "collections": ["home"],
+        "id": "photo-191",
+        "tags": ["term-18", "term-3"],
+        "title": "landscapes (15)",
+        "url": "../wp-content/uploads/landscapes-15.jpg"
+      },
+      "photo-192": {
+        "collections": ["home"],
+        "id": "photo-192",
+        "tags": ["term-18", "term-3", "term-19"],
+        "title": "landscapes (12)",
+        "url": "../wp-content/uploads/landscapes-12.jpg"
+      },
+      "photo-193": {
+        "collections": ["home"],
+        "id": "photo-193",
+        "tags": ["term-18", "term-3"],
+        "title": "landscapes (13)",
+        "url": "../wp-content/uploads/landscapes-13.jpg"
+      },
+      "photo-194": {
+        "collections": ["home"],
+        "id": "photo-194",
+        "tags": ["term-18", "term-3"],
+        "title": "landscapes (14)",
+        "url": "../wp-content/uploads/landscapes-14.jpg"
+      },
+      "photo-196": {
+        "collections": ["home"],
+        "id": "photo-196",
+        "tags": ["term-18", "term-3"],
+        "title": "landscapes (16)",
+        "url": "../wp-content/uploads/landscapes-16.jpg"
+      },
+      "photo-198": {
+        "collections": ["home"],
+        "id": "photo-198",
+        "tags": ["term-18", "term-19"],
+        "title": "IMG_7165",
+        "url": "../wp-content/uploads/IMG_7165.jpg"
+      },
+      "photo-200": {
+        "collections": ["home"],
+        "id": "photo-200",
+        "tags": ["term-13", "term-17", "term-11"],
+        "title": "PORTRAIT_SubinPaul_cybershots_2",
+        "url": "../wp-content/uploads/PORTRAIT_SubinPaul_cybershots_2.jpg"
+      },
+      "photo-205": {
+        "collections": ["home"],
+        "id": "photo-205",
+        "tags": ["term-16", "term-17"],
+        "title": "IMG_8377 - done",
+        "url": "../wp-content/uploads/IMG_8377-done.jpg"
+      },
+      "photo-206": {
+        "collections": ["home"],
+        "id": "photo-206",
+        "tags": ["term-16", "term-17"],
+        "title": "IMG_7858",
+        "url": "../wp-content/uploads/IMG_7858.jpg"
+      },
+      "photo-207": {
+        "collections": ["home"],
+        "id": "photo-207",
+        "tags": ["term-3"],
+        "title": "IMG_7535a",
+        "url": "../wp-content/uploads/IMG_7535a.jpg"
+      },
+      "photo-208": {
+        "collections": ["home"],
+        "id": "photo-208",
+        "tags": ["term-16", "term-17"],
+        "title": "3855943287_3d355180ed_z",
+        "url": "../wp-content/uploads/3855943287_3d355180ed_z.jpg"
+      },
+      "photo-211": {
+        "collections": ["home"],
+        "id": "photo-211",
+        "tags": ["term-3", "term-17", "term-9"],
+        "title": "2107750711_f007cd9d29_b",
+        "url": "../wp-content/uploads/2107750711_f007cd9d29_b.jpg"
+      },
+      "photo-27": {
+        "collections": ["home"],
+        "id": "photo-27",
+        "tags": ["term-3"],
+        "title": "Green Team",
+        "url": "../wp-content/uploads/IMG_2688-copy.jpg"
+      },
+      "photo-281": {
+        "collections": ["home"],
+        "id": "photo-281",
+        "tags": ["term-16"],
+        "title": "2 cricket time",
+        "url": "../wp-content/uploads/2-cricket-time.jpg"
+      },
+      "photo-288": {
+        "collections": ["dilli"],
+        "id": "photo-288",
+        "tags": [""],
+        "title": "9 my pet",
+        "url": "../wp-content/uploads/9-my-pet.jpg"
+      },
+      "photo-290": {
+        "collections": ["home"],
+        "id": "photo-290",
+        "tags": ["term-17", "term-9"],
+        "title": "11 paatti",
+        "url": "../wp-content/uploads/11-paatti.jpg"
+      },
+      "photo-293": {
+        "collections": ["home"],
+        "id": "photo-293",
+        "tags": ["term-20", "term-9"],
+        "title": "14 self",
+        "url": "../wp-content/uploads/14-self.jpg"
+      },
+      "photo-296": {
+        "collections": ["dilli"],
+        "id": "photo-296",
+        "tags": [""],
+        "title": "17 streetlife",
+        "url": "../wp-content/uploads/17-streetlife.jpg"
+      },
+      "photo-298": {
+        "collections": ["home"],
+        "id": "photo-298",
+        "tags": ["term-19"],
+        "title": "19 thanjavur-entrance",
+        "url": "../wp-content/uploads/19-thanjavur-entrance.jpg"
+      },
+      "photo-299": {
+        "collections": ["home"],
+        "id": "photo-299",
+        "tags": ["term-17", "term-9"],
+        "title": "20 the look",
+        "url": "../wp-content/uploads/20-the-look.jpg"
+      },
+      "photo-313": {
+        "collections": ["home"],
+        "id": "photo-313",
+        "tags": ["term-16", "term-20"],
+        "title": "21 photoshoot",
+        "url": "../wp-content/uploads/21-photoshoot.jpg"
+      },
+      "photo-315": {
+        "collections": ["dilli"],
+        "id": "photo-315",
+        "tags": [""],
+        "title": "IMG_2332-small",
+        "url": "../wp-content/uploads/IMG_2332-small.jpg"
+      },
+      "photo-317": {
+        "collections": ["dilli"],
+        "id": "photo-317",
+        "tags": [""],
+        "title": "25 qutub-minar-details",
+        "url": "../wp-content/uploads/25-qutub-minar-details.jpg"
+      },
+      "photo-322": {
+        "collections": ["dilli"],
+        "id": "photo-322",
+        "tags": [""],
+        "title": "24 qutub-minar-eve",
+        "url": "../wp-content/uploads/24-qutub-minar-eve.jpg"
+      },
+      "photo-323": {
+        "collections": ["dilli"],
+        "id": "photo-323",
+        "tags": [""],
+        "title": "23 lost-in-thoughts",
+        "url": "../wp-content/uploads/23-lost-in-thoughts.jpg"
+      },
+      "photo-324": {
+        "collections": ["dilli"],
+        "id": "photo-324",
+        "tags": [""],
+        "title": "22 taj-details",
+        "url": "../wp-content/uploads/22-taj-details.jpg"
+      },
+      "photo-326": {
+        "collections": ["dilli"],
+        "id": "photo-326",
+        "tags": [""],
+        "title": "28 taj night",
+        "url": "../wp-content/uploads/28-taj-night.jpg"
+      },
+      "photo-340": {
+        "collections": ["dilli"],
+        "id": "photo-340",
+        "tags": [""],
+        "title": "32 reflection",
+        "url": "../wp-content/uploads/32-reflection.jpg"
+      },
+      "photo-341": {
+        "collections": ["dilli"],
+        "id": "photo-341",
+        "tags": [""],
+        "title": "29 taj",
+        "url": "../wp-content/uploads/29-taj.jpg"
+      },
+      "photo-342": {
+        "collections": ["dilli"],
+        "id": "photo-342",
+        "tags": [""],
+        "title": "31 reader",
+        "url": "../wp-content/uploads/31-reader.jpg"
+      },
+      "photo-343": {
+        "collections": ["dilli"],
+        "id": "photo-343",
+        "tags": [""],
+        "title": "30 fakir",
+        "url": "../wp-content/uploads/30-fakir.jpg"
+      },
+      "photo-36": {
+        "collections": ["home"],
+        "id": "photo-36",
+        "tags": ["term-3"],
+        "title": "IMG_5750_1",
+        "url": "../wp-content/uploads/IMG_5750_1.jpg"
+      },
+      "photo-367": {
+        "collections": ["dilli"],
+        "id": "photo-367",
+        "tags": [""],
+        "title": "IMG_2427",
+        "url": "../wp-content/uploads/IMG_2427.jpg"
+      },
+      "photo-370": {
+        "collections": ["rajasthan"],
+        "id": "photo-370",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan-IMG_3831-small",
+        "url": "../wp-content/uploads/rajasthan-IMG_3831-small.jpg"
+      },
+      "photo-382": {
+        "collections": ["rajasthan"],
+        "id": "photo-382",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan-IMG_3634-small",
+        "url": "../wp-content/uploads/rajasthan-IMG_3634-small.jpg"
+      },
+      "photo-383": {
+        "collections": ["rajasthan"],
+        "id": "photo-383",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan-hawa mahal - IMG_3799-small",
+        "url": "../wp-content/uploads/rajasthan-hawa-mahal-IMG_3799-small.jpg"
+      },
+      "photo-384": {
+        "collections": ["rajasthan"],
+        "id": "photo-384",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan street muisician IMG_3762-small",
+        "url":
+          "../wp-content/uploads/rajasthan-street-muisician-IMG_3762-small.jpg"
+      },
+      "photo-385": {
+        "collections": ["rajasthan"],
+        "id": "photo-385",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan snake charmer IMG_3788-small",
+        "url":
+          "../wp-content/uploads/rajasthan-snake-charmer-IMG_3788-small.jpg"
+      },
+      "photo-386": {
+        "collections": ["rajasthan"],
+        "id": "photo-386",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan IMG_3816-small",
+        "url": "../wp-content/uploads/rajasthan-IMG_3816-small.jpg"
+      },
+      "photo-387": {
+        "collections": ["rajasthan"],
+        "id": "photo-387",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan IMG_3741-small",
+        "url": "../wp-content/uploads/rajasthan-IMG_3741-small.jpg"
+      },
+      "photo-388": {
+        "collections": ["rajasthan"],
+        "id": "photo-388",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan camel IMG_3729-small",
+        "url": "../wp-content/uploads/rajasthan-camel-IMG_3729-small.jpg"
+      },
+      "photo-389": {
+        "collections": ["rajasthan"],
+        "id": "photo-389",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan IMG_3510-small",
+        "url": "../wp-content/uploads/rajasthan-IMG_3510-small.jpg"
+      },
+      "photo-390": {
+        "collections": ["rajasthan"],
+        "id": "photo-390",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan IMG_3478",
+        "url": "../wp-content/uploads/rajasthan-IMG_3478.jpg"
+      },
+      "photo-391": {
+        "collections": ["rajasthan"],
+        "id": "photo-391",
+        "tags": ["term-21", "term-14"],
+        "title": "rajasthan girl IMG_3481-small",
+        "url": "../wp-content/uploads/rajasthan-girl-IMG_3481-small.jpg"
+      },
+      "photo-417": {
+        "collections": ["rajasthan"],
+        "id": "photo-417",
+        "tags": ["term-21", "term-14"],
+        "title": "IMG_4757-small",
+        "url": "../wp-content/uploads/IMG_4757-small.jpg"
+      },
+      "photo-42": {
+        "collections": ["home"],
+        "id": "photo-42",
+        "tags": ["term-3"],
+        "title": "nature (3)",
+        "url": "../wp-content/uploads/nature-3.jpg"
+      },
+      "photo-424": {
+        "collections": ["rajasthan"],
+        "id": "photo-424",
+        "tags": ["term-21", "term-14"],
+        "title": "IMG_5132a-small",
+        "url": "../wp-content/uploads/IMG_5132a-small.jpg"
+      },
+      "photo-425": {
+        "collections": ["rajasthan"],
+        "id": "photo-425",
+        "tags": ["term-21", "term-14"],
+        "title": "IMG_4365-small",
+        "url": "../wp-content/uploads/IMG_4365-small.jpg"
+      },
+      "photo-426": {
+        "collections": ["rajasthan"],
+        "id": "photo-426",
+        "tags": ["term-21", "term-14"],
+        "title": "IMG_4395-small",
+        "url": "../wp-content/uploads/IMG_4395-small.jpg"
+      },
+      "photo-427": {
+        "collections": ["rajasthan"],
+        "id": "photo-427",
+        "tags": ["term-21", "term-14"],
+        "title": "IMG_4378-small",
+        "url": "../wp-content/uploads/IMG_4378-small.jpg"
+      },
+      "photo-428": {
+        "collections": ["rajasthan"],
+        "id": "photo-428",
+        "tags": ["term-21", "term-14"],
+        "title": "IMG_4852a-small",
+        "url": "../wp-content/uploads/IMG_4852a-small.jpg"
+      },
+      "photo-43": {
+        "collections": ["home"],
+        "id": "photo-43",
+        "tags": ["term-3"],
+        "title": "nature (2)",
+        "url": "../wp-content/uploads/nature-2.jpg"
+      },
+      "photo-45": {
+        "collections": ["home"],
+        "id": "photo-45",
+        "tags": ["term-3"],
+        "title": "nature (0)",
+        "url": "../wp-content/uploads/nature-0.jpg"
+      },
+      "photo-454": {
+        "collections": ["rajasthan"],
+        "id": "photo-454",
+        "tags": ["term-16", "term-21", "term-14", "term-19"],
+        "title": "IMG_8457-small",
+        "url": "../wp-content/uploads/IMG_8457-small.jpg"
+      },
+      "photo-46": {
+        "collections": ["home"],
+        "id": "photo-46",
+        "tags": ["term-3"],
+        "title": "IMG_5277 copy",
+        "url": "../wp-content/uploads/IMG_5277-copy.jpg"
+      },
+      "photo-47": {
+        "collections": ["home", "dilli"],
+        "tags": ["term-3", "term-1"],
+        "title": "unnamed",
+        "url": "../img/blog-bg.jpg"
+      },
+      "photo-48": {
+        "collections": ["home"],
+        "id": "photo-48",
+        "tags": ["term-3"],
+        "title": "IMG_5170",
+        "url": "../wp-content/uploads/IMG_5170.jpg"
+      },
+      "photo-49": {
+        "collections": ["home"],
+        "id": "photo-49",
+        "tags": ["term-3", "term-9"],
+        "title": "IMG_4207",
+        "url": "../wp-content/uploads/IMG_4207.jpg"
+      },
+      "photo-50": {
+        "collections": ["home"],
+        "id": "photo-50",
+        "tags": ["term-3"],
+        "title": "IMG_3468-mail",
+        "url": "../wp-content/uploads/IMG_3468-mail.jpg"
+      },
+      "photo-51": {
+        "collections": ["home"],
+        "id": "photo-51",
+        "tags": ["term-10", "term-3"],
+        "title": "IMG_2983f",
+        "url": "../wp-content/uploads/IMG_2983f.jpg"
+      },
+      "photo-52": {
+        "collections": ["home"],
+        "id": "photo-52",
+        "tags": ["term-3"],
+        "title": "IMG_0928",
+        "url": "../wp-content/uploads/IMG_0928.jpg"
+      },
+      "photo-53": {
+        "collections": ["home"],
+        "id": "photo-53",
+        "tags": ["term-10", "term-3"],
+        "title": "_MG_1150",
+        "url": "../wp-content/uploads/MG_1150.jpg"
+      },
+      "photo-69": {
+        "collections": ["home"],
+        "id": "photo-69",
+        "tags": ["term-10", "term-16", "term-17", "term-11"],
+        "title": "people (24)",
+        "url": "../wp-content/uploads/people-24.jpg"
+      },
+      "photo-70": {
+        "collections": ["home"],
+        "id": "photo-70",
+        "tags": ["term-16", "term-17", "term-19"],
+        "title": "people (23)",
+        "url": "../wp-content/uploads/people-23.jpg"
+      },
+      "photo-71": {
+        "collections": ["home"],
+        "id": "photo-71",
+        "tags": ["term-13", "term-16", "term-17"],
+        "title": "people (22)",
+        "url": "../wp-content/uploads/people-22.jpg"
+      },
+      "photo-72": {
+        "collections": ["home"],
+        "id": "photo-72",
+        "tags": ["term-16", "term-17"],
+        "title": "people (21)",
+        "url": "../wp-content/uploads/people-21.jpg"
+      },
+      "photo-73": {
+        "collections": ["home"],
+        "id": "photo-73",
+        "tags": ["term-10", "term-17", "term-21"],
+        "title": "people (20)",
+        "url": "../wp-content/uploads/people-20.jpg"
+      },
+      "photo-73a": {
+        "collections": ["rajasthan"],
+        "id": "photo-73a",
+        "tags": ["term-10", "term-17", "term-21"],
+        "title": "people (20)",
+        "url": "../wp-content/uploads/people-20.jpg"
+      },
+      "photo-74": {
+        "collections": ["home"],
+        "id": "photo-74",
+        "tags": ["term-17", "term-19"],
+        "title": "people (19)",
+        "url": "../wp-content/uploads/people-19.jpg"
+      },
+      "photo-75": {
+        "collections": ["dilli"],
+        "id": "photo-75",
+        "tags": [""],
+        "title": "people (18)",
+        "url": "../wp-content/uploads/people-18.jpg"
+      },
+      "photo-76": {
+        "collections": ["home"],
+        "id": "photo-76",
+        "tags": ["term-10", "term-17", "term-19"],
+        "title": "people (17)",
+        "url": "../wp-content/uploads/people-17.jpg"
+      },
+      "photo-77": {
+        "collections": ["dilli"],
+        "id": "photo-77",
+        "tags": [""],
+        "title": "people (16)",
+        "url": "../wp-content/uploads/people-16.jpg"
+      },
+      "photo-78": {
+        "collections": ["home"],
+        "id": "photo-78",
+        "tags": ["term-10", "term-17"],
+        "title": "people (15)",
+        "url": "../wp-content/uploads/people-15.jpg"
+      },
+      "photo-79": {
+        "collections": ["home"],
+        "id": "photo-79",
+        "tags": ["term-17"],
+        "title": "people (12)",
+        "url": "../wp-content/uploads/people-12.jpg"
+      },
+      "photo-8": {
+        "collections": ["home"],
+        "id": "photo-8",
+        "tags": ["term-3"],
+        "title": "IMG_7574a",
+        "url": "../wp-content/uploads/IMG_7574a.jpg"
+      },
+      "photo-80": {
+        "collections": ["home"],
+        "id": "photo-80",
+        "tags": ["term-10", "term-17", "term-19"],
+        "title": "people (10)",
+        "url": "../wp-content/uploads/people-10.jpg"
+      },
+      "photo-82": {
+        "collections": ["home"],
+        "id": "photo-82",
+        "tags": ["term-10", "term-16", "term-17", "term-11", "term-9"],
+        "title": "people (9)",
+        "url": "../wp-content/uploads/people-9.jpg"
+      },
+      "photo-83": {
+        "collections": ["home"],
+        "id": "photo-83",
+        "tags": ["term-10", "term-16", "term-17"],
+        "title": "people (3)",
+        "url": "../wp-content/uploads/people-3.jpg"
+      },
+      "photo-84": {
+        "collections": ["home"],
+        "id": "photo-84",
+        "tags": ["term-16", "term-9"],
+        "title": "people (1)",
+        "url": "../wp-content/uploads/people-1.jpg"
+      },
+      "photo-86": {
+        "collections": ["home"],
+        "id": "photo-86",
+        "tags": ["term-10", "term-3", "term-19"],
+        "title": "travel (1)",
+        "url": "../wp-content/uploads/travel-1.jpg"
+      },
+      "photo-97": {
+        "collections": ["dilli"],
+        "id": "photo-97",
+        "tags": [""],
+        "title": "travel (10)",
+        "url": "../wp-content/uploads/travel-10.jpg"
+      },
+      "photo-98": {
+        "collections": ["home"],
+        "id": "photo-98",
+        "tags": ["term-12", "term-15", "term-10", "term-19"],
+        "title": "travel (11)",
+        "url": "../wp-content/uploads/travel-11.jpg"
+      },
+      "photo-98a": {
+        "collections": ["dilli"],
+        "id": "photo-98a",
+        "tags": [""],
+        "title": "travel (11)",
+        "url": "../wp-content/uploads/travel-11.jpg"
+      },
+      "photo-99": {
+        "collections": ["home"],
+        "id": "photo-99",
+        "tags": ["term-18", "term-3"],
+        "title": "travel (13)",
+        "url": "../wp-content/uploads/travel-13.jpg"
+      },
+      "photo-v-269": {
+        "id": "photo-v-269",
+        "collections": ["home"],
+        "tags": ["term-3,term-1,term-2"],
+        "title": "Truimph custom",
+        "url":
+          "https://firebasestorage.googleapis.com/v0/b/gallery-cbc9c.appspot.com/o/gallery%2Fcustom-triumph-bonneville-bobber.jpg?alt=media&token=a8233676-6d66-4506-b8fc-8d7748952135"
+      },
+      "photo-v-561": {
+        "id": "photo-v-561",
+        "collections": ["home", "dilli"],
+        "tags": ["term-3", "term-1"],
+        "title": "unnamed2",
+        "url":
+          "https://firebasestorage.googleapis.com/v0/b/gallery-cbc9c.appspot.com/o/gallery%2FAaa.jpg?alt=media&token=1a1ea9e2-5684-4b61-9c5b-377722e6cd55"
       }
     },
-    "tagOptions" : [ "term-1", "term-2", "term-3", "term-10", "term-11", "term-18", "term-19", "term-17", "term-14", "term-21", "term-16", "term-9", "term-15" ]
+    "tagOptions": [
+      "term-1",
+      "term-2",
+      "term-3",
+      "term-10",
+      "term-11",
+      "term-18",
+      "term-19",
+      "term-17",
+      "term-14",
+      "term-21",
+      "term-16",
+      "term-9",
+      "term-15"
+    ]
   }
 }

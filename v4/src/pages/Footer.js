@@ -1,17 +1,8 @@
-import React, { Component } from 'react';
+import React from "react";
+const Footer = () => {
+  return (
+    <footer> &copy; COPYRIGHT 2018 SUBIN PAUL PHOTOGRAPHY. | VER 4.0</footer>
+  );
+};
 
-export default class Footer extends Component {
-
-    render() {
-        return (
-            <footer className="site-footer">
-                <div className="text-center">
-              2017 - SubinPaul.com
-                    <a href="panels.html#" className="go-top">
-                        <i className="fa fa-angle-up"></i>
-                    </a>
-                </div>
-            </footer>
-        );
-    }
-}
+export default Footer;

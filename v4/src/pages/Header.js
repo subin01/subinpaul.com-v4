@@ -1,46 +1,47 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class Header extends Component {
+  render() {
+    return (
+      <header>
+        <div className="grid-wrap">
+          <a className="logo" href="/">
+            SubinPaul.com
+          </a>
 
-        render() {
-            return (
-              <header>
-                <div id="subheader">
+          <nav>
+            <ul>
+              <li>
+                <a href="#/">
+                  <i className="fa fa-book" />
+                  <span>Home</span>
+                </a>
+              </li>
 
-                  <div className="logo">
-                      <a href="profile.html">
-                        <img src="./assets/img/ui-sam.jpg" alt="" className="img-circle" width="60" />
-                      </a>
-                    <h5 className="centered">SubinPaul.com</h5>
-                  </div>
+              <li>
+                <a href="#/stories">
+                  <i className="fa fa-book" />
+                  <span>Stories</span>
+                </a>
+              </li>
 
-                  <ul className="menu">
+              <li>
+                <a href="#/about">
+                  <i className="fa fa-th" />
+                  <span>About</span>
+                </a>
+              </li>
 
-                    <li>
-                      <a href="#/collections">
-                        <i className="fa fa-book" />
-                        <span>Collections</span>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#/add">
-                        <i className="fa fa-th" />
-                        <span>Add Photo</span>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a href="#/all">
-                        <i className="fa fa-th" />
-                        <span>All Uploads</span>
-                      </a>
-                    </li>
-
-
-                  </ul>
-                </div>
-              </header>
-            );
-    }
+              <li>
+                <a href="#/all">
+                  <i className="fa fa-th" />
+                  <span>Facebook</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    );
+  }
 }
