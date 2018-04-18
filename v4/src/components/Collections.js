@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "./card";
+import Card from "./Card";
 import Modal from "./Modal";
 import Firebase from "../Firebase";
 class Collections extends Component {
@@ -19,6 +19,25 @@ class Collections extends Component {
 
   componentDidMount() {
     this.load();
+    window.addEventListener("keydown", e => this.handleKeydown(e));
+  }
+  componentWillUnmount() {
+    window.removeEventListener("keydown", e => this.handleKeydown(e));
+  }
+  handleKeydown(e) {
+    console.log("handleKeydown event", e.code);
+
+    switch (e.code) {
+      case "ArrowLeft":
+        break;
+      case "ArrowRight":
+        break;
+      case "Escape":
+        this.handleClose();
+        break;
+      default:
+        break;
+    }
   }
 
   load() {
@@ -48,7 +67,7 @@ class Collections extends Component {
     );
   }
 
-  handleClose(id) {
+  handleClose() {
     this.setState(
       {
         modal: { ...this.state.modal, hidden: true }

@@ -44,33 +44,35 @@ class AllPhotos extends Component {
     this.updateGallery(newObj);
   }
 
-  getThumbURL(url){
+  getThumbURL(url) {
     const thumb = "-240x240.jpg";
     return url.indexOf(thumb) ? url : url.replace(".jpg", thumb);
   }
 
-  renderRows (gallery, collectionOptions, tagOptions) {
-
+  renderRows(gallery, collectionOptions, tagOptions) {
     let panelList = [],
       photoObj,
       i = 0;
 
     for (let key in gallery) {
       photoObj = { ...gallery[key], key };
-      photoObj["url"] = this.getThumbURL (photoObj.url);
+      photoObj["url"] = this.getThumbURL(photoObj.url);
       panelList.push(this.getRow(photoObj, key, ++i));
     }
     return panelList;
   }
 
-  getRow(photo, key, i){
+  getRow(photo, key, i) {
     console.log(photo.id);
     return (
-      <tr key={key} >
-        <td className="thumb"><img src={photo.url} alt=''/><span>{i}</span></td>
+      <tr key={key}>
+        <td className="thumb">
+          <img src={photo.url} alt="" />
+          <span>{i}</span>
+        </td>
         <td>{photo.title}</td>
         <td>{photo.collections.join(", ")}</td>
-        <td>{photo.tags && photo.tags.join('#')}</td>
+        <td>{photo.tags && photo.tags.join("#")}</td>
         <td>{photo.id}</td>
       </tr>
     );
@@ -80,21 +82,22 @@ class AllPhotos extends Component {
     return (
       <div>
         <table cellSpacing="0">
-        <thead>
+          <thead>
             <tr>
-                <th> </th>
-                <th>Title</th>
-                <th>Collections</th>
-                <th>Tags</th>
-                <th>ID</th>
+              <th> </th>
+              <th>Title</th>
+              <th>Collections</th>
+              <th>Tags</th>
+              <th>ID</th>
             </tr>
-      </thead>
-      <tbody>
-
-            {this.renderRows(this.state.gallery, this.state.collectionOptions, this.state.tagOptions)}
-
-         </tbody>
-
+          </thead>
+          <tbody>
+            {this.renderRows(
+              this.state.gallery,
+              this.state.collectionOptions,
+              this.state.tagOptions
+            )}
+          </tbody>
         </table>
       </div>
     );
