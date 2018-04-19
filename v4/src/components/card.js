@@ -2,12 +2,12 @@ import React, { Component } from "react";
 
 class Card extends Component {
   render() {
-    const { id, title, tags, url, handleClick } = this.props;
+    const { key, id, title, tags, thumb, handleClick, isBlank } = this.props;
     return (
-      <article id={id}>
-        <a href="#" onClick={() => handleClick(id)}>
+      <article key={key} id={id} className={isBlank ? "blank" : ""}>
+        <a href="#" onClick={key => handleClick(key)}>
           <figure>
-            <img src={url} alt="" />
+            <img src={thumb} alt="" />
             <figcaption>{title}</figcaption>
             <div className="tags">{tags}</div>
           </figure>

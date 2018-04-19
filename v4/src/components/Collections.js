@@ -1,13 +1,13 @@
 import React, { Component } from "react";
+import Filter from "./Filter";
 import Card from "./Card";
 import Modal from "./Modal";
-import Firebase from "../Firebase";
 class Collections extends Component {
   constructor() {
     super();
-    console.log("Collections");
     this.state = {
-      gallery: {},
+      currentItem: 0,
+      filter: "",
       modal: {
         hidden: true,
         photo: {
@@ -18,7 +18,6 @@ class Collections extends Component {
   }
 
   componentDidMount() {
-    this.load();
     window.addEventListener("keydown", e => this.handleKeydown(e));
   }
   componentWillUnmount() {
@@ -29,8 +28,11 @@ class Collections extends Component {
 
     switch (e.code) {
       case "ArrowLeft":
+        this.previousItem(this.state.currentItem, this.props.gallery);
         break;
       case "ArrowRight":
+      case "Space":
+        this.nextItem(this.state.currentItem, this.props.gallery);
         break;
       case "Escape":
         this.handleClose();
@@ -40,31 +42,42 @@ class Collections extends Component {
     }
   }
 
-  load() {
-    if (window.location.href.indexOf("localhost") !== -1) {
-      fetch("gallery-data.json")
-        .then(blob => blob.json())
-        .then(data => {
-          this.setState({ ...data.portfolio });
-        });
-    } else {
-      Firebase.load().then(snapshot => {
-        this.setState({
-          gallery: snapshot.val().gallery
-        });
-      });
-    }
-  }
+  handleTagClick = filter => {
+    this.setState({ filter: filter });
+  };
 
-  handleClick(id) {
+  handleCardClick(id) {
     this.setState(
       {
-        modal: { hidden: false, photo: this.state.gallery[id] }
+        currentItem: id,
+        modal: { hidden: false, photo: this.props.gallery[id] }
       },
       () => {
         console.log(this.state);
       }
     );
+  }
+
+  nextItem(id, gallery) {
+    console.log("nextItem");
+    id = id + 1;
+    id = id % gallery.length;
+    this.setState({
+      currentItem: id,
+      modal: { photo: gallery[id] }
+    });
+  }
+
+  previousItem(id, gallery) {
+    console.log("prevItem");
+
+    id = id === 0 ? gallery.length : id;
+    id = id - 1;
+
+    this.setState({
+      currentItem: id,
+      modal: { photo: gallery[id] }
+    });
   }
 
   handleClose() {
@@ -83,25 +96,46 @@ class Collections extends Component {
     return url.indexOf(thumb) > -1 ? url : url.replace(".jpg", thumb);
   }
 
-  getPanelList(gallery) {
-    let panelList = [],
-      photoObj;
+  getPanelList(gallery, filter, collection) {
+    return gallery
+      .filter((photoObj, index) => {
+        if (collection === "" || photoObj.collections.includes(collection)) {
+          return true;
+        }
+        return false;
+      })
+      .map((photoObj, index) => {
+        photoObj["thumb"] = this.getThumbURL(photoObj.url);
 
-    for (let key in gallery) {
-      photoObj = { ...gallery[key], key };
-
-      photoObj["url"] = this.getThumbURL(photoObj.url);
-      panelList.push(
-        <Card {...photoObj} handleClick={this.handleClick.bind(this)} />
-      );
-    }
-    return panelList;
+        if (filter === "" || photoObj.tags.includes(filter)) {
+          return (
+            <Card
+              key={index}
+              {...photoObj}
+              handleClick={() => this.handleCardClick(index)}
+            />
+          );
+        } else {
+          return <Card key={index} {...photoObj} isBlank={true} />;
+        }
+      });
   }
 
   render() {
     return (
       <div className="grid-wrap">
-        <div className="gallery">{this.getPanelList(this.state.gallery)}</div>
+        <Filter
+          tags={this.props.tags}
+          filter={this.state.filter}
+          handleTagClick={this.handleTagClick.bind(this)}
+        />
+        <div className="gallery">
+          {this.getPanelList(
+            this.props.gallery,
+            this.state.filter,
+            this.props.collection
+          )}
+        </div>
         <Modal
           {...this.state.modal}
           handleClose={this.handleClose.bind(this)}

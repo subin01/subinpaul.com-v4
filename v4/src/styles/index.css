@@ -26,18 +26,18 @@
 
   @define-mixin grid {
     display: grid;
-    grid-template-columns: repeat(4, [col-start] 1fr);
+    grid-template-columns: repeat(6, [col-start] 1fr);
 
     @media (min-width: 768px) {
-      grid-template-columns: repeat(6, [col-start] 1fr);
-    }
-
-    @media (min-width: 1025px) {
       grid-template-columns: repeat(8, [col-start] 1fr);
     }
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1025px) {
       grid-template-columns: repeat(12, [col-start] 1fr);
+    }
+
+    @media (min-width: 1280px) {
+      grid-template-columns: repeat(16, [col-start] 1fr);
     }
   }
 }
@@ -103,9 +103,30 @@ header {
     display: block;
   }
 }
+
+.filter {
+  color: var(--color-primary3);
+  margin-bottom: var(--gap-m);
+  text-align: center;
+
+  & a {
+    margin-left: var(--gap-s);
+    padding: 2px;
+    color: var(--color-primary4);
+  }
+
+  & .selected {
+    color: var(--color-primary3);
+  }
+}
+
 article {
   overflow: hidden;
   position: relative;
+  background: var(--color-secondary2);
+  &.blank figure {
+    opacity: 0.05;
+  }
 
   & img {
     width: 100%;
