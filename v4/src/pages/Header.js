@@ -19,9 +19,9 @@ export default class Header extends Component {
               </li>
 
               <li>
-                <a href="#/stories">
+                <a href="#/collections">
                   <i className="fa fa-book" />
-                  <span>Stories</span>
+                  <span>Collections</span>
                 </a>
               </li>
 

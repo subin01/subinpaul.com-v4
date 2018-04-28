@@ -4,12 +4,12 @@ class Modal extends Component {
   render() {
     const { photo, hidden, handleClose } = this.props;
     return (
-      <dialog open={hidden ? false : true}>
+      <dialog className="modal" open={hidden ? false : true}>
         <div className="head">
           <a
-            href="#"
+            href="javascript:void(0)"
             className="close"
-            onClick={() => handleClose()}
+            onClick={e => handleClose(e)}
             title="Close"
           >
             x

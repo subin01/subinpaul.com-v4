@@ -17,7 +17,12 @@
   --font-m: 15px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @define-mixin grid-wrap {
+  overflow: hidden;
   margin: 0 var(--gap-m);
   max-width: 1200px;
   @media (min-width: 1280px) {
@@ -140,6 +145,25 @@ article {
   }
 }
 
+.page-about {
+  & .avatar {
+    width: 20%;
+    float: left;
+    padding-right: 2%;
+    & img {
+      width: 100%;
+    }
+  }
+  & .col1 {
+    width: 50%;
+    float: left;
+    padding-right: 2%;
+  }
+  & .col2 {
+    width: 30%;
+    float: left;
+  }
+}
 footer {
   border-top: 1px solid var(--color-secondary3);
   outline: 1px solid var(--color-secondary2);
@@ -158,6 +182,11 @@ dialog {
   height: 100vh;
   padding: 0;
   margin: 0;
+
+  & img {
+    width: auto;
+    max-width: 100%;
+  }
 
   & .head {
     border-bottom: 1px solid var(--color-secondary2);

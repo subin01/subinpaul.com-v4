@@ -9,7 +9,7 @@ class Filter extends Component {
         {tags.map((tag, i) => (
           <a
             key={i}
-            href="#"
+            href="javascript:void(0)"
             className={filter === tag ? "selected" : ""}
             onClick={() => handleTagClick(tag)}
           >

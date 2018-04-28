@@ -2,12 +2,12 @@ import React, { Component } from "react";
 import Collections from "../components/Collections";
 import Firebase from "../Firebase";
 
-export default class CollectionsPage extends Component {
+export default class CollectionsLandingPage extends Component {
   constructor() {
     super();
+
     this.state = {
-      gallery: [],
-      tagOptions: []
+      collectionOptions: {}
     };
   }
 
@@ -22,14 +22,14 @@ export default class CollectionsPage extends Component {
         .then(data => {
           this.setState({
             gallery: Object.values(data.portfolio.gallery),
-            tagOptions: data.portfolio.tagOptions
+            tagOptions: data.portfolio.tagOptions,
+            collectionOptions: data.portfolio.collectionOptions
           });
         });
     } else {
       Firebase.load().then(snapshot => {
         this.setState({
-          gallery: Object.values(snapshot.val().gallery),
-          tagOptions: Object.values(snapshot.val().tagOptions)
+          collectionOptions: Object.values(snapshot.val().collectionOptions)
         });
       });
     }
@@ -38,11 +38,10 @@ export default class CollectionsPage extends Component {
   render() {
     return (
       <main className="page-collections">
-        <Collections
-          gallery={this.state.gallery}
-          tags={this.state.tagOptions}
-          collection="home"
-        />
+        <div className="grid-wrap">
+          <h1>Collections</h1>
+          <Collections collectionOptions={this.state.collectionOptions} />
+        </div>
       </main>
     );
   }
