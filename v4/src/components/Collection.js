@@ -96,32 +96,31 @@ class Collection extends Component {
     return url.indexOf(thumb) > -1 ? url : url.replace(".jpg", thumb);
   }
 
-  getPanelList(gallery, filter, collection) {
-    return gallery
-      .filter((photoObj, index) => {
-        if (collection === "" || photoObj.collections.includes(collection)) {
-          return true;
-        }
-        return false;
-      })
-      .map((photoObj, index) => {
-        photoObj["thumb"] = this.getThumbURL(photoObj.url);
+  getPanelList(gallery, filter) {
+    return gallery.map((photoObj, index) => {
+      photoObj["thumb"] = this.getThumbURL(photoObj.url);
 
-        if (filter === "" || photoObj.tags.includes(filter)) {
-          return (
-            <Card
-              key={index}
-              index={index}
-              {...photoObj}
-              handleClick={this.handleCardClick}
-            />
-          );
-        } else {
-          return (
-            <Card key={index} index={index} {...photoObj} isBlank={true} />
-          );
-        }
-      });
+      if (filter === "" || photoObj.tags.includes(filter)) {
+        return (
+          <Card
+            key={index}
+            index={index}
+            {...photoObj}
+            handleClick={this.handleCardClick}
+          />
+        );
+      } else {
+        return (
+          <Card
+            key={index}
+            index={index}
+            id={index}
+            {...photoObj}
+            isBlank={true}
+          />
+        );
+      }
+    });
   }
 
   render() {
@@ -141,11 +140,7 @@ class Collection extends Component {
           />
         )}
         <div className="gallery">
-          {this.getPanelList(
-            this.props.gallery,
-            this.state.filter,
-            this.props.collection
-          )}
+          {this.getPanelList(this.props.gallery, this.state.filter)}
         </div>
         <Modal
           {...this.state.modal}

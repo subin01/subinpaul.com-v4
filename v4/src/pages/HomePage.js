@@ -35,13 +35,25 @@ export default class HomePage extends Component {
     }
   }
 
+  filterGalleryByCollection(gallery, collection) {
+    return gallery.filter((photoObj, index) => {
+      if (collection === "" || photoObj.collections.includes(collection)) {
+        return true;
+      }
+      return false;
+    });
+  }
+
   load() {
     if (window.location.href.indexOf("localhost") !== -1) {
       fetch("gallery-data.json")
         .then(blob => blob.json())
         .then(data => {
           this.setState({
-            gallery: Object.values(data.portfolio.gallery),
+            gallery: this.filterGalleryByCollection(
+              Object.values(data.portfolio.gallery),
+              "home"
+            ),
             tagOptions: data.portfolio.tagOptions,
             collectionDetails:
               data.portfolio.collectionOptions[this.state.currentCollection]
@@ -50,7 +62,10 @@ export default class HomePage extends Component {
     } else {
       Firebase.load().then(snapshot => {
         this.setState({
-          gallery: Object.values(snapshot.val().gallery),
+          gallery: this.filterGalleryByCollection(
+            Object.values(snapshot.val().gallery),
+            "home"
+          ),
           tagOptions: Object.values(snapshot.val().tagOptions),
           collectionDetails: Object.values(
             snapshot.val().collectionOptions[this.state.currentCollection]
