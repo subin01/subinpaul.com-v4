@@ -1,7 +1,10 @@
 import React from "react";
 
 function Button(props) {
-  const styleClass = props.variant && props.variant !== "secondary" ? "cta cta-primary" : "cta cta-secondary";
+  const styleClass =
+    props.variant && props.variant !== "secondary"
+      ? "cta cta-primary"
+      : "cta cta-secondary";
   const styles = `
                 button {
                     padding: 10px 30px;
@@ -13,7 +16,11 @@ function Button(props) {
 
   return (
     <div>
-      <button className={styleClass} onClick={props.onClick} disabled={props.disabled}>
+      <button
+        className={styleClass}
+        onClick={props.onClick}
+        disabled={props.disabled}
+      >
         {props.children}
       </button>
       <style jsx>{styles}</style>
