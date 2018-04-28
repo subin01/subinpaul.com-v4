@@ -124,23 +124,26 @@ class Collection extends Component {
   }
 
   render() {
+    console.log("Collection", this.props);
+    const { tags, gallery } = this.props;
+    const { title, message, filter } = this.props.collectionDetails;
     return (
       <div className="grid-wrap">
-        <h1>{this.props.collectionDetails.title}</h1>
+        <h1>{title}</h1>
         <div
           dangerouslySetInnerHTML={{
-            __html: this.props.collectionDetails.message
+            __html: message
           }}
         />
-        {this.props.collectionDetails.filter && (
+        {filter && (
           <Filter
-            tags={this.props.tags}
+            tags={tags}
             filter={this.state.filter}
             handleTagClick={this.handleTagClick}
           />
         )}
         <div className="gallery">
-          {this.getPanelList(this.props.gallery, this.state.filter)}
+          {this.getPanelList(gallery, this.state.filter)}
         </div>
         <Modal
           {...this.state.modal}
