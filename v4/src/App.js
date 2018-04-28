@@ -9,10 +9,22 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/collections/:collection" component={CollectionPage} />
-        <Route exact path="/collections" component={CollectionsLandingPage} />
-        <Route exact path="/about" component={AboutPage} />
+        <Route exact path="/" render={() => <HomePage />} />
+
+        <Route
+          exact
+          path="/collections"
+          render={() => <CollectionsLandingPage />}
+        />
+
+        <Route exact path="/about" render={() => <AboutPage />} />
+
+        <Route
+          path="/collections/:collection"
+          render={props => (
+            <CollectionPage {...props} otherPayload={"testPayload"} />
+          )}
+        />
       </Switch>
     );
   }
