@@ -37,7 +37,7 @@ export default class CollectionsLandingPage extends Component {
 
   render() {
     return (
-      <main className="page-collections">
+      <main className="page page-collections">
         <div className="grid-wrap">
           <h1>Collections</h1>
           <Collections collectionOptions={this.state.collectionOptions} />

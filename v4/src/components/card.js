@@ -10,7 +10,7 @@ const Card = ({ index, id, title, tags, thumb, handleClick, isBlank }) => {
         }}
       >
         <figure>
-          <img src={thumb} alt="" />
+          <img src={thumb} alt={title} />
           <figcaption>{title}</figcaption>
           <div className="tags">{tags}</div>
         </figure>

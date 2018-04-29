@@ -64,7 +64,6 @@ class App extends Component {
       Firebase.load().then(snapshot => {
         this.setState({
           gallery: Object.values(snapshot.val().gallery),
-
           tagOptions: Object.values(snapshot.val().tagOptions),
           collectionDetails: Object.values(snapshot.val().collectionOptions)
         });

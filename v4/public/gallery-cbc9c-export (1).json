@@ -24,7 +24,7 @@
       "photo-100" : {
         "collections" : [ "home" ],
         "id" : "photo-100",
-        "tags" : [  "term-3" ],
+        "tags" : [ "term-3" ],
         "title" : "travel (6)",
         "url" : "../wp-content/uploads/travel-6.jpg"
       },
@@ -770,8 +770,8 @@
         "url" : "../wp-content/uploads/travel-13.jpg"
       },
       "photo-v-269" : {
-        "collections" : ["home"],
-        "tags" : ["term-3,term-1,term-2"],
+        "collections" : [ "home" ],
+        "tags" : [ "term-3,term-1,term-2" ],
         "title" : "Truimph custom",
         "url" : "https://firebasestorage.googleapis.com/v0/b/gallery-cbc9c.appspot.com/o/gallery%2Fcustom-triumph-bonneville-bobber.jpg?alt=media&token=a8233676-6d66-4506-b8fc-8d7748952135"
       },

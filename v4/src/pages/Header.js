@@ -5,37 +5,31 @@ export default class Header extends Component {
     return (
       <header>
         <div className="grid-wrap">
-          <a className="logo" href="/">
+          <a className="logo" href="#/">
             SubinPaul.com
           </a>
 
           <nav>
             <ul>
-              <li>
-                <a href="#/">
-                  <i className="fa fa-book" />
-                  <span>Home</span>
-                </a>
+              <li className="home">
+                <a href="#/">Home</a>
               </li>
 
               <li>
-                <a href="#/collections">
-                  <i className="fa fa-book" />
-                  <span>Collections</span>
-                </a>
+                <a href="#/collections">Collections</a>
               </li>
 
               <li>
-                <a href="#/about">
+                <a href="#/about">About</a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.facebook.com/subinpaulphotography"
+                  target="_blank"
+                >
                   <i className="fa fa-th" />
-                  <span>About</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#/all">
-                  <i className="fa fa-th" />
-                  <span>Facebook</span>
+                  Facebook
                 </a>
               </li>
             </ul>

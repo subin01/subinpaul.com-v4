@@ -6,7 +6,10 @@ const getCollectionsList = collections => {
     return (
       collection.title && (
         <li key={i}>
-          <a href={`#/collections/${key}`}>{collection.title}</a>
+          <h2>
+            <a href={`#/collections/${key}`}>{collection.title}</a>
+          </h2>
+          <span>{collection.intro}</span>
         </li>
       )
     );
@@ -14,7 +17,9 @@ const getCollectionsList = collections => {
 };
 
 const Collections = ({ collectionOptions }) => {
-  return <ul>{getCollectionsList(collectionOptions)}</ul>;
+  return (
+    <ul className="collections">{getCollectionsList(collectionOptions)}</ul>
+  );
 };
 
 export default Collections;

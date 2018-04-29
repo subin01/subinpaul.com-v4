@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class AboutPage extends Component {
   render() {
     return (
-      <div className="page-about">
+      <div className="page page-about">
         <div className="grid-wrap">
           <h1> About </h1>
 

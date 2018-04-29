@@ -53,10 +53,27 @@ class Collection extends Component {
         modal: { hidden: false, photo: this.props.gallery[id] }
       },
       () => {
+        document.querySelector("html").classList.add("dialog-on");
+        document.querySelector("dialog").style.top =
+          document.querySelector("html").scrollTop + "px";
+
         console.log(this.state);
       }
     );
   };
+
+  handleClose() {
+    this.setState(
+      {
+        modal: { ...this.state.modal, hidden: true }
+      },
+      () => {
+        document.querySelector("html").classList.remove("dialog-on");
+
+        console.log(this.state);
+      }
+    );
+  }
 
   nextItem(id, gallery) {
     console.log("nextItem");
@@ -78,17 +95,6 @@ class Collection extends Component {
       currentItem: id,
       modal: { photo: gallery[id] }
     });
-  }
-
-  handleClose() {
-    this.setState(
-      {
-        modal: { ...this.state.modal, hidden: true }
-      },
-      () => {
-        console.log(this.state);
-      }
-    );
   }
 
   getThumbURL(url) {
@@ -124,26 +130,28 @@ class Collection extends Component {
   }
 
   render() {
-    console.log("Collection", this.props);
     const { tags, gallery } = this.props;
     const { title, message, filter } = this.props.collectionDetails;
     return (
       <div className="grid-wrap">
-        <h1>{title}</h1>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: message
-          }}
-        />
-        {filter && (
-          <Filter
-            tags={tags}
-            filter={this.state.filter}
-            handleTagClick={this.handleTagClick}
+        <div className="collection">
+          <h1>{title}</h1>
+          <div
+            className="message"
+            dangerouslySetInnerHTML={{
+              __html: message
+            }}
           />
-        )}
-        <div className="gallery">
-          {this.getPanelList(gallery, this.state.filter)}
+          {filter && (
+            <Filter
+              tags={tags}
+              filter={this.state.filter}
+              handleTagClick={this.handleTagClick}
+            />
+          )}
+          <div className="gallery">
+            {this.getPanelList(gallery, this.state.filter)}
+          </div>
         </div>
         <Modal
           {...this.state.modal}

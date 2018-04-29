@@ -2,7 +2,10 @@ import React from "react";
 
 const Modal = ({ photo, hidden, handleClose }) => {
   return (
-    <dialog className="modal" open={hidden ? false : true}>
+    <dialog
+      open={hidden ? false : true}
+      className={hidden ? "hidden" : "visible"}
+    >
       <div className="head">
         <a
           href="javascript:void(0)"
@@ -14,7 +17,9 @@ const Modal = ({ photo, hidden, handleClose }) => {
         </a>
       </div>
       <figure>
-        <img src={photo.url} alt="" />
+        <div className="wrap">
+          <img src={photo.url} alt="" />
+        </div>
         <figcaption>{photo.title}</figcaption>
         <div className="tags">{photo.tags}</div>
       </figure>

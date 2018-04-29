@@ -7,7 +7,7 @@ export default class CollectionPage extends Component {
 
   render() {
     return (
-      <main className="page-collections">
+      <main className="page page-collection">
         <Collection {...this.props} />
       </main>
     );
