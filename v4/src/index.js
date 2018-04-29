@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import { HashRouter } from "react-router-dom";
 import App from "./App";
 import Firebase from "./Firebase";
-import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 
 import "./styles/normalize.css";
@@ -13,7 +12,6 @@ Firebase.init();
 
 ReactDOM.render(
   <section>
-    <Header />
     <section id="main">
       <HashRouter>
         <App />

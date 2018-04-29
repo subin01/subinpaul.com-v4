@@ -188,6 +188,11 @@ header {
   & li a {
     padding: var(--gap-m) var(--gap-m) var(--gap-m) var(--gap-m);
     display: block;
+    text-transform: capitalize;
+  }
+
+  & .active {
+    color: orange;
   }
 }
 
@@ -253,6 +258,9 @@ article {
   @media (min-width: 768px) {
     padding: 0;
   }
+}
+
+.page-home {
 }
 
 .page-collection {

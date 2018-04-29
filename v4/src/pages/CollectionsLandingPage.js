@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Collections from "../components/Collections";
 import Firebase from "../Firebase";
+import Header from "./Header";
 
 export default class CollectionsLandingPage extends Component {
   constructor() {
@@ -38,6 +39,7 @@ export default class CollectionsLandingPage extends Component {
   render() {
     return (
       <main className="page page-collections">
+        <Header {...this.props} />
         <div className="grid-wrap">
           <h1>Collections</h1>
           <Collections collectionOptions={this.state.collectionOptions} />

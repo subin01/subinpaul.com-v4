@@ -1,9 +1,11 @@
 import React, { Component } from "react";
+import Header from "./Header";
 
 export default class AboutPage extends Component {
   render() {
     return (
       <div className="page page-about">
+        <Header {...this.props} />
         <div className="grid-wrap">
           <h1> About </h1>
 

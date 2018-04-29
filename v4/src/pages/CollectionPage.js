@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Collection from "../components/Collection";
+import Header from "./Header";
 
 export default class CollectionPage extends Component {
   //@TODO: Redirect invalid collection-route to Home
@@ -8,6 +9,7 @@ export default class CollectionPage extends Component {
   render() {
     return (
       <main className="page page-collection">
+        <Header {...this.props} />
         <Collection {...this.props} />
       </main>
     );

@@ -783,6 +783,12 @@
       "kids",
       "travel",
       "White&Black"
-    ]
+    ],
+    "pages": {
+      "about": "/about",
+      "collections": "/collections",
+      "facebook": "http://fb.com/subinpaulphotography",
+      "home": "/"
+    }
   }
 }

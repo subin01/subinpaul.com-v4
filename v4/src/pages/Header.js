@@ -1,6 +1,26 @@
 import React, { Component } from "react";
 
 export default class Header extends Component {
+  getPageList() {
+    console.log("Header", this.props);
+
+    const { match, pages } = this.props;
+
+    return Object.keys(pages).map((page, i) => {
+      const pageUrl = pages[page];
+      return (
+        <li key={i} className={page}>
+          <a
+            className={match.url === pageUrl ? "active" : ""}
+            href={"#" + pageUrl}
+          >
+            {page}
+          </a>
+        </li>
+      );
+    });
+  }
+
   render() {
     return (
       <header>
@@ -10,29 +30,7 @@ export default class Header extends Component {
           </a>
 
           <nav>
-            <ul>
-              <li className="home">
-                <a href="#/">Home</a>
-              </li>
-
-              <li>
-                <a href="#/collections">Collections</a>
-              </li>
-
-              <li>
-                <a href="#/about">About</a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.facebook.com/subinpaulphotography"
-                  target="_blank"
-                >
-                  <i className="fa fa-th" />
-                  Facebook
-                </a>
-              </li>
-            </ul>
+            <ul>{this.getPageList()}</ul>
           </nav>
         </div>
       </header>

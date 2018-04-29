@@ -14,6 +14,7 @@ class App extends Component {
     this.state = {
       gallery: [],
       tagOptions: [],
+      pages: {},
       collectionDetails: {
         title: "",
         filter: "",
@@ -57,7 +58,8 @@ class App extends Component {
           this.setState({
             gallery: Object.values(data.portfolio.gallery),
             tagOptions: data.portfolio.tagOptions,
-            collectionDetails: data.portfolio.collectionOptions
+            collectionDetails: data.portfolio.collectionOptions,
+            pages: data.portfolio.pages
           });
         });
     } else {
@@ -65,7 +67,8 @@ class App extends Component {
         this.setState({
           gallery: Object.values(snapshot.val().gallery),
           tagOptions: Object.values(snapshot.val().tagOptions),
-          collectionDetails: Object.values(snapshot.val().collectionOptions)
+          collectionDetails: Object.values(snapshot.val().collectionOptions),
+          pages: Object.values(snapshot.val().pages)
         });
       });
     }
@@ -91,6 +94,7 @@ class App extends Component {
                   "home"
                 )}
                 collection="home"
+                pages={this.state.pages}
               />
             )}
           />
@@ -98,25 +102,33 @@ class App extends Component {
           <Route
             exact
             path="/collections"
-            render={() => <CollectionsLandingPage />}
+            render={props => (
+              <CollectionsLandingPage {...props} pages={this.state.pages} />
+            )}
           />
 
-          <Route exact path="/about" render={() => <AboutPage />} />
+          <Route
+            exact
+            path="/about"
+            render={props => <AboutPage {...props} pages={this.state.pages} />}
+          />
 
           <Route
             path="/collections/:collection"
-            render={({ match: { params } }) => (
+            render={props => (
               <CollectionPage
+                {...props}
                 gallery={this.filterGalleryByCollection(
                   this.state.gallery,
-                  params.collection
+                  props.match.params.collection
                 )}
                 tags={this.state.tagOptions}
                 collectionDetails={this.filterCollectionDetails(
                   this.state.collectionDetails,
-                  params.collection
+                  props.match.params.collection
                 )}
-                collection={params.collection}
+                collection={props.match.params.collection}
+                pages={this.state.pages}
               />
             )}
           />
