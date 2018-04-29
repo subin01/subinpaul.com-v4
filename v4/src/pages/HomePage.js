@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import CollectionContainer from "../components/CollectionContainer";
+import Collection from "../components/Collection";
 
 export default class HomePage extends Component {
   render() {
     return (
       <main className="page-home">
-        <CollectionContainer collection="home" />
+        <Collection {...this.props} />
       </main>
     );
   }
