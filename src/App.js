@@ -39,6 +39,7 @@ class App extends Component {
   }
 
   filterCollectionOptions(collectionOptions, collection) {
+    // @TODO : Remove hardcoding
     const options = ["dilli", "rajasthan"];
     if (collection && !options.includes(collection)) {
       collection = "home";
@@ -47,29 +48,36 @@ class App extends Component {
   }
 
   load() {
-    /*
     // Enable For faster Local development
+    /*
     if (window.location.href.indexOf("localhost") !== -1) {
       fetch("gallery-data.json")
         .then(blob => blob.json())
         .then(data => {
+          console.log("Local:", data.portfolio.gallery);
+
+
           this.setState({
             gallery: Object.values(data.portfolio.gallery),
             tagOptions: data.portfolio.tagOptions,
             collectionOptions: data.portfolio.collectionOptions,
             pages: data.portfolio.pages
           });
+
         });
 
-      return;
+      //return;
     }
     */
+
     Firebase.load().then(snapshot => {
+      //console.log("Firebase:", snapshot.val().gallery);
+
       this.setState({
         gallery: Object.values(snapshot.val().gallery),
-        tagOptions: Object.values(snapshot.val().tagOptions),
-        collectionOptions: Object.values(snapshot.val().collectionOptions),
-        pages: Object.values(snapshot.val().pages)
+        tagOptions: snapshot.val().tagOptions,
+        collectionOptions: snapshot.val().collectionOptions,
+        pages: snapshot.val().pages
       });
     });
   }

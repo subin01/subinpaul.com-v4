@@ -7,7 +7,7 @@ class Collection extends Component {
     super();
     this.state = {
       currentItem: 0,
-      filter: "",
+      filters: "",
       modal: {
         isLoading: false,
         hidden: true,
@@ -42,8 +42,8 @@ class Collection extends Component {
     }
   }
 
-  handleTagClick = filter => {
-    this.setState({ filter: filter });
+  handleTagClick = filters => {
+    this.setState({ filters: filters });
   };
 
   handleCardClick = id => {
@@ -141,7 +141,7 @@ class Collection extends Component {
 
   render() {
     const { tags, gallery } = this.props;
-    const { title, message, filter } = this.props.collectionDetails || "";
+    const { title, message, filters } = this.props.collectionDetails || "";
     return (
       <div>
         <div className="collection">
@@ -154,15 +154,15 @@ class Collection extends Component {
               }}
             />
           </div>
-          {filter && (
+          {filters && (
             <Filter
               tags={tags}
-              filter={this.state.filter}
+              filters={this.state.filters}
               handleTagClick={this.handleTagClick}
             />
           )}
           <div className="gallery">
-            {this.getPanelList(gallery, this.state.filter)}
+            {this.getPanelList(gallery, this.state.filters)}
           </div>
         </div>
         <Modal

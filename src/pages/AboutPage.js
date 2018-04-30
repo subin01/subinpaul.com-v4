@@ -12,8 +12,8 @@ const AboutPage = props => {
           <div className="avatar">
             <img
               title="Subin-Paul"
-              src="../wp-content/uploads/Subin-Paul.jpg"
-              alt=""
+              src="../images/subin-paul-photo.jpg"
+              alt="Subin Paul"
             />
           </div>
 

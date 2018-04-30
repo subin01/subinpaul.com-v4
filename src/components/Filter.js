@@ -1,6 +1,6 @@
 import React from "react";
 
-const Filter = ({ tags, filter, handleTagClick }) => {
+const Filter = ({ tags, filters, handleTagClick }) => {
   tags = tags.slice();
   tags.push("all");
 
@@ -14,7 +14,7 @@ const Filter = ({ tags, filter, handleTagClick }) => {
             <a
               key={i}
               href="javascript:void(0)"
-              className={filter === selectedTag ? "selected" : ""}
+              className={filters === selectedTag ? "selected" : ""}
               onClick={() => handleTagClick(selectedTag)}
             >
               {tag}

@@ -2,7 +2,7 @@
   "portfolio": {
     "collectionOptions": {
       "dilli": {
-        "filter": false,
+        "filters": false,
         "message":
           "<p>The Capital was christened &#8220;New Delhi&#8221; in 1927.<br />  It is one of the fastest growing cities in the world.<br />The National Geographic&#8217;s Traveler Magazine describes it as &#8220;one of the Ultimate Cities of a Lifetime to visit and explore.&#8221;<br/><br/>Here&#8217;s few images I captured during my Delhi visit back in 2009.</p>",
         "name": "Dilli",
@@ -10,13 +10,13 @@
         "intro": "18 Images from Jaipur, Jodhpur & Jaisalmer"
       },
       "home": {
-        "filter": true,
+        "filters": true,
         "message": "",
         "name": "Home",
         "title": ""
       },
       "rajasthan": {
-        "filter": false,
+        "filters": false,
         "message":
           "<p>Famous for its majestic forts,intricately carved temples,and decorated havelis,built by Rajput kings; Rajasthan is also the land of colours.<br/><br/>Here&#8217;s few frames from my travel through the cities of Rajasthan -<br />Jaipur known as the Pink City,<br />Jodhpur known the Blue City and<br />Jaisalmer nicknamed The Golden City &#8211; in 2009 &amp; 2010.</p>",
         "name": "Rajastan",
