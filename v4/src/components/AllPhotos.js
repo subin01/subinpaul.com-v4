@@ -3,7 +3,6 @@ import Firebase from "../Firebase";
 class AllPhotos extends Component {
   constructor() {
     super();
-    console.log("Collections");
     this.state = {
       gallery: {},
       collectionOptions: {},

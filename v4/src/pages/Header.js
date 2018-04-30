@@ -2,19 +2,19 @@ import React, { Component } from "react";
 
 export default class Header extends Component {
   getPageList() {
-    console.log("Header", this.props);
-
     const { match, pages } = this.props;
 
-    return Object.keys(pages).map((page, i) => {
-      const pageUrl = pages[page];
+    return pages.map((page, i) => {
+      const absURL = page.url.replace("/#", "/");
+
       return (
-        <li key={i} className={page}>
+        <li key={i} className={page.title}>
           <a
-            className={match.url === pageUrl ? "active" : ""}
-            href={"#" + pageUrl}
+            className={absURL === match.url ? "active" : ""}
+            href={page.url}
+            target={page.url.includes("http") ? "_blank" : ""}
           >
-            {page}
+            {page.title}
           </a>
         </li>
       );

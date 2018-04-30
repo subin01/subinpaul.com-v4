@@ -23,10 +23,9 @@ class Firebase {
 
   load() {
     console.log(this.getRootRef().once("value"));
-    if (window.location.href.indexOf("localhost") !== -1 )  {
-     // return this.getRootRef().once("value");
+    if (window.location.href.indexOf("localhost") !== -1) {
+      // return this.getRootRef().once("value");
     }
-    console.log(fetch("./gallery-data.json"));
 
     //return (fetch("./gallery-data.json"))
   }
@@ -49,8 +48,6 @@ class Firebase {
   }
 
   add(id, newPhoto) {
-    console.log("******** Add photo", id, newPhoto);
-
     firebase
       .database()
       .ref("portfolio/gallery/" + id)

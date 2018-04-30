@@ -1,6 +1,19 @@
 import React from "react";
 
-const Modal = ({ photo, hidden, handleClose }) => {
+// const handleLoad = e => {
+//   alert("loaded");
+//   document.querySelector("#preview").classList.remove("loading");
+// };
+
+const Modal = ({
+  photo,
+  isLoading,
+  hidden,
+  handlePrevious,
+  handleNext,
+  handleClose,
+  handleOnLoad
+}) => {
   return (
     <dialog
       open={hidden ? false : true}
@@ -9,16 +22,37 @@ const Modal = ({ photo, hidden, handleClose }) => {
       <div className="head">
         <a
           href="javascript:void(0)"
-          className="close"
+          className="icon next"
+          onClick={e => handlePrevious(e)}
+          title="Previous"
+        >
+          <span>‹</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          className="icon next"
+          onClick={e => handleNext(e)}
+          title="Next"
+        >
+          <span>›</span>
+        </a>
+        <a
+          href="javascript:void(0)"
+          className="icon close"
           onClick={e => handleClose(e)}
           title="Close"
         >
-          x
+          <span> ×</span>
         </a>
       </div>
-      <figure>
+      <figure className={isLoading ? "loading" : ""}>
         <div className="wrap">
-          <img src={photo.url} alt="" />
+          <span className="loader">Loading...</span>
+          <img
+            src={photo.url}
+            alt={photo.title}
+            onLoad={e => handleOnLoad(e)}
+          />
         </div>
         <figcaption>{photo.title}</figcaption>
         <div className="tags">{photo.tags}</div>

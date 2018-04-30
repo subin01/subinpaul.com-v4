@@ -1,17 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import Collection from "../components/Collection";
 import Header from "./Header";
 
-export default class CollectionPage extends Component {
+const CollectionPage = props => {
   //@TODO: Redirect invalid collection-route to Home
   // this.props.history.push("/");
 
-  render() {
-    return (
-      <main className="page page-collection">
-        <Header {...this.props} />
-        <Collection {...this.props} />
-      </main>
-    );
-  }
-}
+  return (
+    <main className="page page-collection">
+      <Header {...props} />
+      <Collection {...props} />
+    </main>
+  );
+};
+
+export default CollectionPage;

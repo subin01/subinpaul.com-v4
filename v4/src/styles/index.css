@@ -1,8 +1,11 @@
+/* --------------------------- Variables --------------------------- */
+
 :root {
   --color-primary1: #eee;
   --color-primary2: #ddd;
   --color-primary3: #ccc;
-  --color-primary4: #666;
+  --color-primary4: #aaa;
+  --color-primary5: #666;
   --color-secondary1: #000;
   --color-secondary2: #202020;
   --color-secondary3: #333;
@@ -17,7 +20,7 @@
   --font-s: 12px;
   --font-m: 15px;
   --font-l: 17px;
-  --font-xl: 23px;
+  --font-xl: 21px;
 
   /* doesnt work in media-quries */
   --bp-m: 768px;
@@ -26,10 +29,7 @@
   --bp-xxl: 1480px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+/* --------------------------- Mixins --------------------------- */
 @define-mixin grid-wrap {
   overflow: hidden;
   max-width: 1200px;
@@ -68,6 +68,12 @@
   outline: 1px solid var(--color-secondary3);
 }
 
+/* --------------------------- Global styles --------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -76,7 +82,7 @@ body {
   margin: 0 0 80px;
   font-family: sans-serif;
   font-size: var(--font-size-m);
-  color: var(--color-primary1);
+  color: var(--color-primary3);
   text-shadow: 0 1px 0 var(--color-shadow);
   font: normal 0.82em/150% "Merriweather", Georgia, "Times New Roman", serif;
 }
@@ -85,12 +91,12 @@ body {
   background: var(--color-secondary1) url("dark_bg.gif");
 }
 
-dialog {
-  background: rgba(0, 0, 0, 0.9);
+p {
+  margin-bottom: 1.5em;
 }
-
 h1 {
   font-size: var(--font-xl);
+  margin-top: 2em;
 }
 h2 {
   font-size: var(--font-l);
@@ -104,14 +110,21 @@ figure {
   margin: 0;
 }
 
+dialog {
+  background: rgba(0, 0, 0, 0.9);
+}
+
 .grid-wrap {
   @mixin grid-wrap;
 }
+
+/* --------------------------- Components --------------------------- */
 
 .collection {
   & .message,
   & h1 {
     padding: 0 var(--gap-l);
+    color: var(--color-primary2);
   }
 
   @media (min-width: 768px) {
@@ -120,9 +133,10 @@ figure {
       padding: 0;
     }
   }
-}
-.gallery {
-  @mixin grid;
+
+  & .gallery {
+    @mixin grid;
+  }
 }
 
 .collections {
@@ -134,10 +148,9 @@ figure {
     margin-bottom: var(--gap-s);
   }
   & span {
-    color: var(--color-primary4);
+    color: var(--color-primary5);
   }
 }
-
 header {
   overflow: hidden;
   @mixin seperator;
@@ -207,13 +220,13 @@ header {
   .list {
     overflow: hidden;
     overflow-x: scroll;
-    padding-bottom: var(--gap-m);
+    padding: var(--gap-m) 0;
   }
 
   & a {
     margin-left: var(--gap-s);
     padding: 2px;
-    color: var(--color-primary4);
+    color: var(--color-primary5);
     text-transform: capitalize;
   }
 
@@ -237,7 +250,28 @@ article {
   overflow: hidden;
   position: relative;
   background: var(--color-secondary2);
+  height: 20vw; /* 100 % 5 cols */
+
+  @media (min-width: 768px) {
+    height: 12.5vw; /* 100 % 8 cols */
+  }
+
+  @media (min-width: 1025px) {
+    height: 8.333vw; /* 100 % 12cols */
+  }
+
+  @media (min-width: 1280px) {
+    height: 7.142vw; /* 100 % 14 cols */
+  }
+  & figure {
+    height: 100%;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+
   &.blank figure {
+    transition: opacity 0.4s;
     opacity: 0.05;
   }
 
@@ -253,65 +287,17 @@ article {
   }
 }
 
-.page-collections {
-  padding: var(--gap-m);
-  @media (min-width: 768px) {
-    padding: 0;
-  }
-}
-
-.page-home {
-}
-
-.page-collection {
-}
-.page-about {
-  padding: 0 var(--gap-l);
-  @media (min-width: 768px) {
-    padding: 0;
-  }
-  & .avatar {
-    width: 100%;
-    float: left;
-    padding-right: 2%;
-    & img {
-      width: 100%;
-      max-width: 200px;
-    }
-
-    @media (min-width: 768px) {
-      width: 20%;
-    }
-  }
-  & .col1 {
-    float: left;
-    padding-right: 2%;
-    padding-bottom: 2%;
-
-    @media (min-width: 768px) {
-      width: 50%;
-    }
-  }
-  & .col2 {
-    float: left;
-    color: var(--color-primary3);
-
-    @media (min-width: 768px) {
-      width: 30%;
-    }
-  }
-}
 footer {
   border-top: 1px solid var(--color-secondary3);
   outline: 1px solid var(--color-secondary2);
   text-align: center;
   padding: var(--gap-m);
   letter-spacing: 0.3em;
-  color: var(--color-primary4);
+  color: var(--color-primary5);
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: 8px;
+  font-size: 7px;
 
   @media (min-width: 768px) {
     font-size: var(--font-x);
@@ -334,7 +320,25 @@ dialog {
 
   & figure {
     height: 100%;
+    position: relative;
   }
+
+  & .loader {
+    background: url(loader.gif) no-repeat center center;
+    opacity: 0.8;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+  }
+
+  & .loading {
+    & .loader {
+      display: block;
+    }
+  }
+
   & .wrap {
     align-items: center;
     height: 100%;
@@ -353,6 +357,7 @@ dialog {
     position: absolute;
     top: 0;
     width: 100%;
+    text-align: right;
   }
 
   & figure {
@@ -364,19 +369,92 @@ dialog {
     display: block;
   }
 
+  & .icon {
+    padding: var(--gap-s);
+    display: inline-block;
+
+    & span {
+      background: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      text-align: center;
+      height: 30px;
+      width: 30px;
+      line-height: 0.8;
+      font: 2rem/0.85 Tahoma, Geneva, sans-serif;
+      color: var(--color-primary3);
+    }
+  }
+
   & .close {
-    font: 2rem/0.85 Tahoma, Geneva, sans-serif;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: rgba(0, 0, 0, 0.5);
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 0.8;
+    margin-left: var(--gap-m);
   }
 }
 
 dialog.visible {
   display: block;
+}
+
+/* --------------------------- Pages --------------------------- */
+
+.page-collections {
+  h1 {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    padding: 0;
+    & h1 {
+      display: block;
+    }
+  }
+}
+
+.page-home {
+}
+
+.page-collection {
+}
+.page-about {
+  & .wrap {
+    padding: 0 var(--gap-l);
+  }
+  h1 {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    padding: 0;
+    & h1 {
+      display: block;
+    }
+  }
+  & .avatar {
+    width: 100%;
+    float: left;
+    margin-top: 1em;
+    padding-right: 2%;
+    & img {
+      width: 100%;
+      max-width: 250px;
+    }
+
+    @media (min-width: 768px) {
+      width: 20%;
+    }
+  }
+  & .col1 {
+    float: left;
+    padding-right: 7%;
+    padding-bottom: 2%;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  & .col2 {
+    float: left;
+    color: var(--color-primary4);
+
+    @media (min-width: 768px) {
+      width: 30%;
+    }
+  }
 }

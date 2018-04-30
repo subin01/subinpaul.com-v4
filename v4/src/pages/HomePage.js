@@ -1,14 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 import Collection from "../components/Collection";
 import Header from "./Header";
 
-export default class HomePage extends Component {
-  render() {
-    return (
-      <main className="page-home">
-        <Header {...this.props} />
-        <Collection {...this.props} />
-      </main>
-    );
-  }
-}
+const HomePage = props => {
+  return (
+    <main className="page-home">
+      <Header {...props} />
+      <Collection {...props} />
+    </main>
+  );
+};
+
+export default HomePage;

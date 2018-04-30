@@ -15,11 +15,7 @@ class App extends Component {
       gallery: [],
       tagOptions: [],
       pages: {},
-      collectionDetails: {
-        title: "",
-        filter: "",
-        message: ""
-      }
+      collectionOptions: {}
     };
   }
   componentDidMount() {
@@ -42,7 +38,7 @@ class App extends Component {
     });
   }
 
-  filterCollectionDetails(collectionOptions, collection) {
+  filterCollectionOptions(collectionOptions, collection) {
     const options = ["dilli", "rajasthan"];
     if (collection && !options.includes(collection)) {
       collection = "home";
@@ -58,7 +54,7 @@ class App extends Component {
           this.setState({
             gallery: Object.values(data.portfolio.gallery),
             tagOptions: data.portfolio.tagOptions,
-            collectionDetails: data.portfolio.collectionOptions,
+            collectionOptions: data.portfolio.collectionOptions,
             pages: data.portfolio.pages
           });
         });
@@ -67,7 +63,7 @@ class App extends Component {
         this.setState({
           gallery: Object.values(snapshot.val().gallery),
           tagOptions: Object.values(snapshot.val().tagOptions),
-          collectionDetails: Object.values(snapshot.val().collectionOptions),
+          collectionOptions: Object.values(snapshot.val().collectionOptions),
           pages: Object.values(snapshot.val().pages)
         });
       });
@@ -89,8 +85,8 @@ class App extends Component {
                   "home"
                 )}
                 tags={this.state.tagOptions}
-                collectionDetails={this.filterCollectionDetails(
-                  this.state.collectionDetails,
+                collectionDetails={this.filterCollectionOptions(
+                  this.state.collectionOptions,
                   "home"
                 )}
                 collection="home"
@@ -103,7 +99,11 @@ class App extends Component {
             exact
             path="/collections"
             render={props => (
-              <CollectionsLandingPage {...props} pages={this.state.pages} />
+              <CollectionsLandingPage
+                {...props}
+                collectionOptions={this.state.collectionOptions}
+                pages={this.state.pages}
+              />
             )}
           />
 
@@ -123,8 +123,8 @@ class App extends Component {
                   props.match.params.collection
                 )}
                 tags={this.state.tagOptions}
-                collectionDetails={this.filterCollectionDetails(
-                  this.state.collectionDetails,
+                collectionDetails={this.filterCollectionOptions(
+                  this.state.collectionOptions,
                   props.match.params.collection
                 )}
                 collection={props.match.params.collection}

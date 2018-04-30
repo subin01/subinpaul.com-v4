@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from "./Header";
 
-export default class AboutPage extends Component {
-  render() {
-    return (
-      <div className="page page-about">
-        <Header {...this.props} />
-        <div className="grid-wrap">
+const AboutPage = props => {
+  return (
+    <div className="page page-about">
+      <Header {...props} />
+      <div className="grid-wrap">
+        <div className="wrap">
           <h1> About </h1>
 
           <div className="avatar">
@@ -18,29 +18,28 @@ export default class AboutPage extends Component {
           </div>
 
           <section className="col1">
+            <p>Hello there! My name is Subin Paul.</p>
             <p>
-              Hello there! My name is Subin Paul.
-              <br /> These are some of the photographs from my eclectic
-              collection that I’ve been able to compile over the last four years
-              or so. I am more of a weekend photographer than
-              a&nbsp;professional one. My passion includes &nbsp;travelling a
-              lot, meeting new people and places. This is a humble effort to
-              capture&nbsp;the essence of human emotions, the
-              &nbsp;ever-enticing Mother Nature and&nbsp;the nuances of our
-              proud Indian culture through my lens. Last but not the least, I
-              thank you all for your support. For its your appreciation and
-              encouragement that &nbsp;gets me going!
+              These are some of the photographs from my eclectic collection that
+              I’ve been able to compile over the last four years or so. I am
+              more of a weekend photographer than a&nbsp;professional one. My
+              passion includes &nbsp;travelling a lot, meeting new people and
+              places. This is a humble effort to capture&nbsp;the essence of
+              human emotions, the &nbsp;ever-enticing Mother Nature and&nbsp;the
+              nuances of our proud Indian culture through my lens. Last but not
+              the least, I thank you all for your support. For its your
+              appreciation and encouragement that &nbsp;gets me going!
             </p>
-            <p>Few places I have visited:</p>
-            <ul>
-              <li> Varanasi</li>
-              <li> Kolkata</li>
-              <li> Jaipur</li>
-              <li> Jodhpur</li>
-              <li> Jaisalmer</li>
-              <li> Haridwar</li>
-              <li> Kashmir</li>
-            </ul>
+            {/* <p>Few places I have visited:</p>
+          <ul>
+            <li> Varanasi</li>
+            <li> Kolkata</li>
+            <li> Jaipur</li>
+            <li> Jodhpur</li>
+            <li> Jaisalmer</li>
+            <li> Haridwar</li>
+            <li> Kashmir</li>
+          </ul> */}
             <p>
               I hope you enjoyed strolling through my collection. You can
               replete my website by filling the form below with your
@@ -56,16 +55,22 @@ export default class AboutPage extends Component {
             <p>
               Personal Page:
               <br />
-              <a href="https://www.facebook.com/paul.subin">
+              <a
+                href="https://www.facebook.com/paul.subin"
+                rel="noopener noreferer"
+                target="_blank"
+              >
                 https://www.facebook.com/paul.subin
               </a>
             </p>
           </section>
 
           <section className="col2">
-            <br /> For the people who are interested in technical side of
-            photography, here are the details of gear that I use:
-            <p />
+            <p>&nbsp;</p>
+            <p>
+              For the people who are interested in technical side of
+              photography, here are the details of gear that I use:
+            </p>
             <p>
               -Canon EOS 500D (Body)
               <br /> -Canon EOS 400D (Sold)
@@ -86,6 +91,8 @@ export default class AboutPage extends Component {
           </section>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+export default AboutPage;

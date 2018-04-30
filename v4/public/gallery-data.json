@@ -18,7 +18,7 @@
       "rajasthan": {
         "filter": false,
         "message":
-          "<p>Famous for its majestic forts,intricately carved temples,and decorated havelis,built by Rajput kings;<br />  Rajasthan is also the land of colours.<br/><br/>Here&#8217;s few frames from my travel through the cities of Rajasthan -<br />Jaipur known as the Pink City,<br />Jodhpur known the Blue City and<br />Jaisalmer nicknamed The Golden City &#8211; in 2009 &amp; 2010.</p>",
+          "<p>Famous for its majestic forts,intricately carved temples,and decorated havelis,built by Rajput kings; Rajasthan is also the land of colours.<br/><br/>Here&#8217;s few frames from my travel through the cities of Rajasthan -<br />Jaipur known as the Pink City,<br />Jodhpur known the Blue City and<br />Jaisalmer nicknamed The Golden City &#8211; in 2009 &amp; 2010.</p>",
         "name": "Rajastan",
         "title": "Rajasthan - The land of kings",
         "intro": "18 Images from Delhi"
@@ -573,12 +573,7 @@
         "title": "IMG_5277 copy",
         "url": "../wp-content/uploads/IMG_5277-copy.jpg"
       },
-      "photo-47": {
-        "collections": ["home", "dilli"],
-        "tags": ["nature"],
-        "title": "unnamed",
-        "url": "../img/blog-bg.jpg"
-      },
+
       "photo-48": {
         "collections": ["home"],
         "id": "photo-48",
@@ -784,11 +779,12 @@
       "travel",
       "White&Black"
     ],
-    "pages": {
-      "about": "/about",
-      "collections": "/collections",
-      "facebook": "http://fb.com/subinpaulphotography",
-      "home": "/"
-    }
+
+    "pages": [
+      { "title": "home", "url": "/#" },
+      { "title": "collections", "url": "/#collections" },
+      { "title": "about", "url": "/#about" },
+      { "title": "facebook", "url": "http://fb.com/subinpaulphotography" }
+    ]
   }
 }

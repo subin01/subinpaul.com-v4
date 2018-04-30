@@ -9,6 +9,7 @@ class Collection extends Component {
       currentItem: 0,
       filter: "",
       modal: {
+        isLoading: false,
         hidden: true,
         photo: {
           url: ""
@@ -23,9 +24,8 @@ class Collection extends Component {
   componentWillUnmount() {
     window.removeEventListener("keydown", e => this.handleKeydown(e));
   }
-  handleKeydown(e) {
-    console.log("handleKeydown event", e.code);
 
+  handleKeydown(e) {
     switch (e.code) {
       case "ArrowLeft":
         this.previousItem(this.state.currentItem, this.props.gallery);
@@ -50,16 +50,20 @@ class Collection extends Component {
     this.setState(
       {
         currentItem: id,
-        modal: { hidden: false, photo: this.props.gallery[id] }
+        modal: { hidden: false, photo: this.props.gallery[id], isLoading: true }
       },
       () => {
         document.querySelector("html").classList.add("dialog-on");
         document.querySelector("dialog").style.top =
           document.querySelector("html").scrollTop + "px";
-
-        console.log(this.state);
       }
     );
+  };
+
+  handleOnLoad = () => {
+    this.setState({
+      modal: { ...this.state.modal, isLoading: false }
+    });
   };
 
   handleClose() {
@@ -69,10 +73,16 @@ class Collection extends Component {
       },
       () => {
         document.querySelector("html").classList.remove("dialog-on");
-
-        console.log(this.state);
       }
     );
+  }
+
+  handlePrevious() {
+    this.previousItem(this.state.currentItem, this.props.gallery);
+  }
+
+  handleNext() {
+    this.nextItem(this.state.currentItem, this.props.gallery);
   }
 
   nextItem(id, gallery) {
@@ -81,7 +91,7 @@ class Collection extends Component {
     id = id % gallery.length;
     this.setState({
       currentItem: id,
-      modal: { photo: gallery[id] }
+      modal: { photo: gallery[id], isLoading: true }
     });
   }
 
@@ -93,7 +103,7 @@ class Collection extends Component {
 
     this.setState({
       currentItem: id,
-      modal: { photo: gallery[id] }
+      modal: { photo: gallery[id], isLoading: true }
     });
   }
 
@@ -133,15 +143,17 @@ class Collection extends Component {
     const { tags, gallery } = this.props;
     const { title, message, filter } = this.props.collectionDetails;
     return (
-      <div className="grid-wrap">
+      <div>
         <div className="collection">
-          <h1>{title}</h1>
-          <div
-            className="message"
-            dangerouslySetInnerHTML={{
-              __html: message
-            }}
-          />
+          <div className="grid-wrap">
+            {title && <h1>{title}</h1>}
+            <div
+              className="message"
+              dangerouslySetInnerHTML={{
+                __html: message
+              }}
+            />
+          </div>
           {filter && (
             <Filter
               tags={tags}
@@ -155,7 +167,10 @@ class Collection extends Component {
         </div>
         <Modal
           {...this.state.modal}
+          handlePrevious={this.handlePrevious.bind(this)}
+          handleNext={this.handleNext.bind(this)}
           handleClose={this.handleClose.bind(this)}
+          handleOnLoad={this.handleOnLoad.bind(this)}
         />
       </div>
     );
