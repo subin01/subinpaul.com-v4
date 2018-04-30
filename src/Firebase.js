@@ -3,12 +3,12 @@ class Firebase {
   init() {
     // Initialize Firebase
     var config = {
-      apiKey: "AIzaSyDHPX1yvA2t7nyVcVkOnLNf2cIp9BZe6zI",
-      authDomain: "gallery-cbc9c.firebaseapp.com",
-      databaseURL: "https://gallery-cbc9c.firebaseio.com",
-      projectId: "gallery-cbc9c",
-      storageBucket: "gallery-cbc9c.appspot.com",
-      messagingSenderId: "397599745402"
+      apiKey: "AIzaSyAWMYZ5pFmU0R01UTn5PWIB60W7oJacyno",
+      authDomain: "subinpaul-v4.firebaseapp.com",
+      databaseURL: "https://subinpaul-v4.firebaseio.com",
+      projectId: "subinpaul-v4",
+      storageBucket: "subinpaul-v4.appspot.com",
+      messagingSenderId: "858045169773"
     };
     firebase.initializeApp(config);
   }

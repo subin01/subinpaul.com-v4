@@ -1,5 +1,5 @@
 {
-  "name": "siteadmin2",
+  "name": "SubinPaul.com-V4",
   "version": "1.1.0",
   "private": true,
   "dependencies": {
@@ -53,10 +53,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/subin01/siteadmin2.git"
+    "url": "git+https://github.com/subin01/subinpaul.com-v4.git"
   },
   "bugs": {
-    "url": "https://github.com/subin01/siteadmin2/issues"
+    "url": "https://github.com/subin01/subinpaul.com-v4/issues"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.17",
