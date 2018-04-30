@@ -2,7 +2,7 @@ import * as firebase from "firebase";
 class Firebase {
   init() {
     // Initialize Firebase
-    var config = {
+    const config = {
       apiKey: "AIzaSyAWMYZ5pFmU0R01UTn5PWIB60W7oJacyno",
       authDomain: "subinpaul-v4.firebaseapp.com",
       databaseURL: "https://subinpaul-v4.firebaseio.com",
@@ -23,11 +23,7 @@ class Firebase {
 
   load() {
     console.log(this.getRootRef().once("value"));
-    if (window.location.href.indexOf("localhost") !== -1) {
-      // return this.getRootRef().once("value");
-    }
-
-    //return (fetch("./gallery-data.json"))
+    return this.getRootRef().once("value");
   }
 
   save(newGallery) {

@@ -141,7 +141,7 @@ class Collection extends Component {
 
   render() {
     const { tags, gallery } = this.props;
-    const { title, message, filter } = this.props.collectionDetails;
+    const { title, message, filter } = this.props.collectionDetails || "";
     return (
       <div>
         <div className="collection">

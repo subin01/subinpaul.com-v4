@@ -47,6 +47,8 @@ class App extends Component {
   }
 
   load() {
+    /*
+    // Enable For faster Local development
     if (window.location.href.indexOf("localhost") !== -1) {
       fetch("gallery-data.json")
         .then(blob => blob.json())
@@ -58,16 +60,18 @@ class App extends Component {
             pages: data.portfolio.pages
           });
         });
-    } else {
-      Firebase.load().then(snapshot => {
-        this.setState({
-          gallery: Object.values(snapshot.val().gallery),
-          tagOptions: Object.values(snapshot.val().tagOptions),
-          collectionOptions: Object.values(snapshot.val().collectionOptions),
-          pages: Object.values(snapshot.val().pages)
-        });
-      });
+
+      return;
     }
+    */
+    Firebase.load().then(snapshot => {
+      this.setState({
+        gallery: Object.values(snapshot.val().gallery),
+        tagOptions: Object.values(snapshot.val().tagOptions),
+        collectionOptions: Object.values(snapshot.val().collectionOptions),
+        pages: Object.values(snapshot.val().pages)
+      });
+    });
   }
 
   render() {
