@@ -1,9 +1,15 @@
 language : node_js
 node_js :
-  - "4.0"
+  - "stable"
+cache:
+  directories:
+  - node_modules
+
 script :
   - echo "Deploying!"
+
 install :
+  - npm install
   - npm run build
   - npm i -g firebase-tools
   - firebase -V
