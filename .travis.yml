@@ -4,6 +4,7 @@ node_js :
 script :
   - echo "Deploying!"
 install :
+  - npm run build
   - npm i -g firebase-tools
   - firebase -V
   - firebase deploy --token $FIREBASE_TOKEN
