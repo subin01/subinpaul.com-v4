@@ -1,13 +1,12 @@
-language: node_js
-node_js:
-  - "stable"
-cache:
-  directories:
-  - node_modules
-install:
-  - npm install
-script:
-  - npm run build
-deploy:
-  skip_cleanup: true
-  provider: firebase
+language : node_js
+node_js :
+  - "4.0"
+script :
+  - npm run build && cd build
+  - echo "Deploying!"
+install :
+  - npm i -g firebase-tools
+  - firebase -V
+  - firebase deploy --token $FIREBASE_TOKEN
+after_sucess:
+  - echo "--End firebase--"
